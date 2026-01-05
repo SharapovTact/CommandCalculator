@@ -1,0 +1,29 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/Study/PLIS/CommandCalculator/PLIS_Project/TEST_TEST_sch_tb_isim_beh.exe -prj D:/Study/PLIS/CommandCalculator/PLIS_Project/TEST_TEST_sch_tb_beh.prj work.TEST_TEST_sch_tb work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/Study/PLIS/CommandCalculator/PLIS_Project/TEST.vf" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Parsing VHDL file "D:/Study/PLIS/CommandCalculator/PLIS_Project/Special_Counter.vhd" into library work
+Parsing VHDL file "D:/Study/PLIS/CommandCalculator/PLIS_Project/TEST_Scheme.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module glbl
+Compiling module TEST
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package vcomponents
+Compiling package vl_types
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling architecture behavioral of entity Special_Counter [special_counter_default]
+Compiling architecture behavioral of entity test_test_sch_tb
+Time Resolution for simulation is 1ps.
+Waiting for 2 sub-compilation(s) to finish...
+Compiled 10 VHDL Units
+Compiled 2 Verilog Units
+Built simulation executable D:/Study/PLIS/CommandCalculator/PLIS_Project/TEST_TEST_sch_tb_isim_beh.exe
+Fuse Memory Usage: 50824 KB
+Fuse CPU Usage: 686 ms

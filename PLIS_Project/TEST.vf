@@ -1,0 +1,49 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : TEST.vf
+// /___/   /\     Timestamp : 01/05/2026 15:38:06
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog D:/Study/PLIS/CommandCalculator/PLIS_Project/TEST.vf -w D:/Study/PLIS/CommandCalculator/PLIS_Project/TEST.sch
+//Design Name: TEST
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module TEST(CLK, 
+            Q0, 
+            Q1, 
+            RST, 
+            SIG);
+
+    input CLK;
+   output [2:0] Q0;
+   output [2:0] Q1;
+   output RST;
+   output SIG;
+   
+   wire XLXN_7;
+   wire RST_DUMMY;
+   
+   assign RST = RST_DUMMY;
+   Special_Counter  XLXI_3 (.CLK(CLK), 
+                           .RST(RST_DUMMY), 
+                           .D(XLXN_7), 
+                           .E(SIG), 
+                           .Q(Q0[2:0]));
+   Special_Counter  XLXI_4 (.CLK(XLXN_7), 
+                           .RST(RST_DUMMY), 
+                           .D(RST_DUMMY), 
+                           .E(), 
+                           .Q(Q1[2:0]));
+endmodule
