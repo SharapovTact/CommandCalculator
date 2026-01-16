@@ -1,12 +1,12 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
-entity Devider_25MHz is
+entity Divider_25MHz is
     Port ( CLK_100MHz : in  STD_LOGIC;
            CLK_25MHz : out  STD_LOGIC);
-end Devider_25MHz;
+end Divider_25MHz;
 
-architecture Behavioral of Devider_25MHz is
+architecture Behavioral of Divider_25MHz is
 
 begin
 process(CLK_100MHz)

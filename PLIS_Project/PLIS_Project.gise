@@ -25,6 +25,8 @@
     <file xil_pn:fileType="FILE_SPL" xil_pn:name="Devider_25MHz.spl"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="Devider_25MHz.sym" xil_pn:origination="imported"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Devider_25MHz_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="Divider_25MHz.spl"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="Divider_25MHz.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Special_Counter.prj"/>
     <file xil_pn:fileType="FILE_SPL" xil_pn:name="Special_Counter.spl"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Special_Counter.stx"/>
@@ -51,6 +53,10 @@
     <transform xil_pn:end_ts="1768602186" xil_pn:in_ck="-7725851538032649732" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1768602186">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Devider_25MHz.vhd"/>
       <outfile xil_pn:name="Special_Counter.vhd"/>
       <outfile xil_pn:name="TEST_Scheme.vhd"/>
@@ -73,7 +79,11 @@
     <transform xil_pn:end_ts="1768602186" xil_pn:in_ck="8916810082097957222" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1768602186">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Devider_25MHz.vhd"/>
       <outfile xil_pn:name="Special_Counter.vhd"/>
       <outfile xil_pn:name="TEST.vf"/>
@@ -82,8 +92,10 @@
     <transform xil_pn:end_ts="1768602190" xil_pn:in_ck="8916810082097957222" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="7645637397412512286" xil_pn:start_ts="1768602186">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="TEST_TEST_sch_tb_beh.prj"/>
       <outfile xil_pn:name="TEST_TEST_sch_tb_isim_beh.exe"/>

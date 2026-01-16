@@ -11,8 +11,5 @@
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/Study/PLIS/CommandCalculator/PLIS_Project/Devider_25MHz.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/Study/PLIS/CommandCalculator/PLIS_Project/Special_Counter.vhd&quot; into library work</arg>
-</msg>
-
 </messages>
 
