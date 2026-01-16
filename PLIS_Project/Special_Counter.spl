@@ -2,7 +2,7 @@
 CLK
 RST
 [Outputs]
-E
-D
+STATE
+TRNSPRNT
 =Q[2:0]=
 [BiDir]

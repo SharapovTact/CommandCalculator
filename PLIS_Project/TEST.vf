@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : TEST.vf
-// /___/   /\     Timestamp : 01/05/2026 15:38:06
+// /___/   /\     Timestamp : 01/17/2026 01:21:15
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -38,12 +38,12 @@ module TEST(CLK,
    assign RST = RST_DUMMY;
    Special_Counter  XLXI_3 (.CLK(CLK), 
                            .RST(RST_DUMMY), 
-                           .D(XLXN_7), 
-                           .E(SIG), 
-                           .Q(Q0[2:0]));
+                           .Q(Q0[2:0]), 
+                           .STATE(SIG), 
+                           .TRNSPRNT(XLXN_7));
    Special_Counter  XLXI_4 (.CLK(XLXN_7), 
                            .RST(RST_DUMMY), 
-                           .D(RST_DUMMY), 
-                           .E(), 
-                           .Q(Q1[2:0]));
+                           .Q(Q1[2:0]), 
+                           .STATE(), 
+                           .TRNSPRNT(RST_DUMMY));
 endmodule

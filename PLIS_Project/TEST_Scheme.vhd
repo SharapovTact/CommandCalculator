@@ -46,6 +46,7 @@ BEGIN
    );
 	test_proc : process
 	begin
+		RST <= '1';
 		CLK <= '1';
 		wait for 50 ns;
 		CLK <= '0';
