@@ -21,68 +21,40 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "D:/Study/PLIS/CommandCalculator/PLIS_Project/TEST.vf";
+static const char *ng0 = "D:/Study/PLIS/CommandCalculator/PLIS_Project/const_MODC.vhd";
 
 
 
-static void Cont_38_0(char *t0)
+static void work_a_2055306025_3212880686_p_0(char *t0)
 {
     char *t1;
-    char *t2;
     char *t3;
     char *t4;
     char *t5;
     char *t6;
     char *t7;
-    unsigned int t8;
-    unsigned int t9;
-    char *t10;
-    unsigned int t11;
-    unsigned int t12;
-    char *t13;
-    unsigned int t14;
-    unsigned int t15;
-    char *t16;
 
-LAB0:    t1 = (t0 + 3168U);
-    t2 = *((char **)t1);
-    if (t2 == 0)
-        goto LAB2;
+LAB0:    xsi_set_current_line(12, ng0);
 
-LAB3:    goto *t2;
-
-LAB2:    xsi_set_current_line(38, ng0);
-    t2 = (t0 + 2008U);
-    t3 = *((char **)t2);
-    t2 = (t0 + 3568);
-    t4 = (t2 + 56U);
+LAB3:    t1 = (t0 + 4104);
+    t3 = (t0 + 2576);
+    t4 = (t3 + 56U);
     t5 = *((char **)t4);
     t6 = (t5 + 56U);
     t7 = *((char **)t6);
-    memset(t7, 0, 8);
-    t8 = 1U;
-    t9 = t8;
-    t10 = (t3 + 4);
-    t11 = *((unsigned int *)t3);
-    t8 = (t8 & t11);
-    t12 = *((unsigned int *)t10);
-    t9 = (t9 & t12);
-    t13 = (t7 + 4);
-    t14 = *((unsigned int *)t7);
-    *((unsigned int *)t7) = (t14 | t8);
-    t15 = *((unsigned int *)t13);
-    *((unsigned int *)t13) = (t15 | t9);
-    xsi_driver_vfirst_trans(t2, 0, 0);
-    t16 = (t0 + 3488);
-    *((int *)t16) = 1;
+    memcpy(t7, t1, 10U);
+    xsi_driver_first_trans_fast_port(t3);
 
+LAB2:
 LAB1:    return;
+LAB4:    goto LAB2;
+
 }
 
 
-extern void work_m_00000000003019788940_1087167475_init()
+extern void work_a_2055306025_3212880686_init()
 {
-	static char *pe[] = {(void *)Cont_38_0};
-	xsi_register_didat("work_m_00000000003019788940_1087167475", "isim/TEST_TEST_sch_tb_isim_beh.exe.sim/work/m_00000000003019788940_1087167475.didat");
+	static char *pe[] = {(void *)work_a_2055306025_3212880686_p_0};
+	xsi_register_didat("work_a_2055306025_3212880686", "isim/TEST_TEST_sch_tb_isim_beh.exe.sim/work/a_2055306025_3212880686.didat");
 	xsi_register_executes(pe);
 }

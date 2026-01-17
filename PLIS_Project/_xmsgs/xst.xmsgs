@@ -5,11 +5,5 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="error" file="HDLCompiler" num="22" delta="new" >"D:\Study\PLIS\CommandCalculator\PLIS_Project\Special_Counter.vhd" Line 23: <arg fmt="%s" index="1">rst</arg> does not have attribute <arg fmt="%s" index="2">rise</arg>
-</msg>
-
-<msg type="error" file="HDLCompiler" num="854" delta="new" >"D:\Study\PLIS\CommandCalculator\PLIS_Project\Special_Counter.vhd" Line 12: Unit &lt;<arg fmt="%s" index="1">behavioral</arg>&gt; ignored due to previous errors.
-</msg>
-
 </messages>
 

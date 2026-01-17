@@ -1,8 +1,9 @@
 [Inputs]
 CLK
 RST
+=MODC[9:0]=
 [Outputs]
 STATE
 TRNSPRNT
-=Q[2:0]=
+=Q[9:0]=
 [BiDir]

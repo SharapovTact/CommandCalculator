@@ -6,86 +6,110 @@
         <trait edittrait="all:0" />
     </attr>
     <netlist>
+        <signal name="XLXN_9(9:0)" />
+        <signal name="XLXN_10" />
+        <signal name="XLXN_8(9:0)" />
         <signal name="CLK" />
-        <signal name="SIG" />
-        <signal name="Q0(2:0)" />
-        <signal name="XLXN_7" />
-        <signal name="RST" />
-        <signal name="Q1(2:0)" />
+        <signal name="XLXN_14" />
+        <signal name="XLXN_15" />
+        <signal name="Q1(9:0)" />
+        <signal name="Q2(9:0)" />
         <port polarity="Input" name="CLK" />
-        <port polarity="Output" name="SIG" />
-        <port polarity="Output" name="Q0(2:0)" />
-        <port polarity="Input" name="RST" />
-        <port polarity="Output" name="Q1(2:0)" />
+        <port polarity="Output" name="Q1(9:0)" />
+        <port polarity="Output" name="Q2(9:0)" />
         <blockdef name="Special_Counter">
-            <timestamp>2026-1-16T22:20:44</timestamp>
-            <line x2="0" y1="-96" y2="-96" x1="64" />
+            <timestamp>2026-1-17T7:52:55</timestamp>
+            <rect width="368" x="64" y="-128" height="192" />
             <line x2="0" y1="-32" y2="-32" x1="64" />
+            <line x2="0" y1="32" y2="32" x1="64" />
+            <rect width="64" x="0" y="-108" height="24" />
+            <line x2="0" y1="-96" y2="-96" x1="64" />
+            <rect width="64" x="432" y="-44" height="24" />
+            <line x2="496" y1="-32" y2="-32" x1="432" />
+            <line x2="496" y1="-96" y2="-96" x1="432" />
+            <line x2="496" y1="32" y2="32" x1="432" />
+        </blockdef>
+        <blockdef name="const_MODC">
+            <timestamp>2026-1-17T7:58:55</timestamp>
+            <rect width="256" x="64" y="-64" height="64" />
             <rect width="64" x="320" y="-44" height="24" />
             <line x2="384" y1="-32" y2="-32" x1="320" />
-            <rect width="256" x="64" y="-128" height="200" />
-            <line x2="384" y1="-96" y2="-96" x1="320" />
-            <line x2="384" y1="32" y2="32" x1="320" />
         </blockdef>
-        <block symbolname="Special_Counter" name="XLXI_3">
-            <blockpin signalname="CLK" name="CLK" />
-            <blockpin signalname="RST" name="RST" />
-            <blockpin signalname="Q0(2:0)" name="Q(2:0)" />
-            <blockpin signalname="XLXN_7" name="TRNSPRNT" />
-            <blockpin signalname="SIG" name="STATE" />
-        </block>
-        <block symbolname="Special_Counter" name="XLXI_4">
-            <blockpin signalname="XLXN_7" name="CLK" />
-            <blockpin signalname="RST" name="RST" />
-            <blockpin signalname="Q1(2:0)" name="Q(2:0)" />
-            <blockpin name="TRNSPRNT" />
+        <blockdef name="const_MODC2">
+            <timestamp>2026-1-17T7:59:7</timestamp>
+            <rect width="256" x="64" y="-64" height="64" />
+            <rect width="64" x="320" y="-44" height="24" />
+            <line x2="384" y1="-32" y2="-32" x1="320" />
+        </blockdef>
+        <block symbolname="Special_Counter" name="XLXI_6">
+            <blockpin signalname="XLXN_10" name="CLK" />
+            <blockpin signalname="XLXN_15" name="RST" />
+            <blockpin signalname="XLXN_9(9:0)" name="MODC(9:0)" />
             <blockpin name="STATE" />
+            <blockpin signalname="XLXN_15" name="TRNSPRNT" />
+            <blockpin signalname="Q2(9:0)" name="Q(9:0)" />
+        </block>
+        <block symbolname="Special_Counter" name="XLXI_5">
+            <blockpin signalname="CLK" name="CLK" />
+            <blockpin signalname="XLXN_15" name="RST" />
+            <blockpin signalname="XLXN_8(9:0)" name="MODC(9:0)" />
+            <blockpin name="STATE" />
+            <blockpin signalname="XLXN_10" name="TRNSPRNT" />
+            <blockpin signalname="Q1(9:0)" name="Q(9:0)" />
+        </block>
+        <block symbolname="const_MODC" name="XLXI_8">
+            <blockpin signalname="XLXN_8(9:0)" name="MODC(9:0)" />
+        </block>
+        <block symbolname="const_MODC2" name="XLXI_9">
+            <blockpin signalname="XLXN_9(9:0)" name="MODC(9:0)" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
-        <iomarker fontsize="28" x="1440" y="800" name="CLK" orien="R180" />
-        <branch name="SIG">
-            <wire x2="1904" y1="928" y2="928" x1="1856" />
-            <wire x2="1904" y1="928" y2="944" x1="1904" />
-            <wire x2="1904" y1="944" y2="992" x1="1904" />
-            <wire x2="1904" y1="992" y2="1168" x1="1904" />
-            <wire x2="2880" y1="1168" y2="1168" x1="1904" />
-            <wire x2="2912" y1="1136" y2="1136" x1="2880" />
-            <wire x2="2880" y1="1136" y2="1168" x1="2880" />
+        <instance x="2496" y="960" name="XLXI_6" orien="R0">
+        </instance>
+        <branch name="XLXN_9(9:0)">
+            <wire x2="2480" y1="720" y2="720" x1="2416" />
+            <wire x2="2480" y1="720" y2="864" x1="2480" />
+            <wire x2="2496" y1="864" y2="864" x1="2480" />
         </branch>
-        <iomarker fontsize="28" x="2912" y="1136" name="SIG" orien="R0" />
-        <branch name="Q0(2:0)">
-            <wire x2="1872" y1="864" y2="864" x1="1856" />
-            <wire x2="1888" y1="864" y2="864" x1="1872" />
+        <instance x="1616" y="960" name="XLXI_5" orien="R0">
+        </instance>
+        <branch name="XLXN_8(9:0)">
+            <wire x2="1600" y1="720" y2="720" x1="1504" />
+            <wire x2="1600" y1="720" y2="864" x1="1600" />
+            <wire x2="1616" y1="864" y2="864" x1="1600" />
         </branch>
-        <iomarker fontsize="28" x="1888" y="864" name="Q0(2:0)" orien="R0" />
+        <branch name="XLXN_10">
+            <wire x2="2288" y1="864" y2="864" x1="2112" />
+            <wire x2="2288" y1="864" y2="928" x1="2288" />
+            <wire x2="2496" y1="928" y2="928" x1="2288" />
+        </branch>
         <branch name="CLK">
-            <wire x2="1456" y1="800" y2="800" x1="1440" />
-            <wire x2="1472" y1="800" y2="800" x1="1456" />
+            <wire x2="1600" y1="928" y2="928" x1="1568" />
+            <wire x2="1616" y1="928" y2="928" x1="1600" />
         </branch>
-        <instance x="1472" y="896" name="XLXI_3" orien="R0">
+        <branch name="XLXN_15">
+            <wire x2="1616" y1="992" y2="992" x1="1536" />
+            <wire x2="1536" y1="992" y2="1104" x1="1536" />
+            <wire x2="2432" y1="1104" y2="1104" x1="1536" />
+            <wire x2="3072" y1="1104" y2="1104" x1="2432" />
+            <wire x2="2496" y1="992" y2="992" x1="2432" />
+            <wire x2="2432" y1="992" y2="1104" x1="2432" />
+            <wire x2="3072" y1="864" y2="864" x1="2992" />
+            <wire x2="3072" y1="864" y2="1104" x1="3072" />
+        </branch>
+        <branch name="Q1(9:0)">
+            <wire x2="2144" y1="928" y2="928" x1="2112" />
+        </branch>
+        <iomarker fontsize="28" x="2144" y="928" name="Q1(9:0)" orien="R0" />
+        <branch name="Q2(9:0)">
+            <wire x2="3024" y1="928" y2="928" x1="2992" />
+        </branch>
+        <iomarker fontsize="28" x="3024" y="928" name="Q2(9:0)" orien="R0" />
+        <iomarker fontsize="28" x="1568" y="928" name="CLK" orien="R180" />
+        <instance x="1120" y="752" name="XLXI_8" orien="R0">
         </instance>
-        <branch name="RST">
-            <wire x2="1456" y1="960" y2="960" x1="1344" />
-            <wire x2="1456" y1="960" y2="1040" x1="1456" />
-            <wire x2="1472" y1="1040" y2="1040" x1="1456" />
-            <wire x2="2096" y1="1040" y2="1040" x1="1472" />
-            <wire x2="1472" y1="864" y2="864" x1="1456" />
-            <wire x2="1456" y1="864" y2="960" x1="1456" />
-            <wire x2="2096" y1="864" y2="1040" x1="2096" />
-            <wire x2="2192" y1="864" y2="864" x1="2096" />
-        </branch>
-        <branch name="XLXN_7">
-            <wire x2="1872" y1="800" y2="800" x1="1856" />
-            <wire x2="2192" y1="800" y2="800" x1="1872" />
-        </branch>
-        <branch name="Q1(2:0)">
-            <wire x2="2592" y1="864" y2="864" x1="2576" />
-            <wire x2="2608" y1="864" y2="864" x1="2592" />
-        </branch>
-        <instance x="2192" y="896" name="XLXI_4" orien="R0">
+        <instance x="2032" y="752" name="XLXI_9" orien="R0">
         </instance>
-        <iomarker fontsize="28" x="2608" y="864" name="Q1(2:0)" orien="R0" />
-        <iomarker fontsize="28" x="1344" y="960" name="RST" orien="R180" />
     </sheet>
 </drawing>

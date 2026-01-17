@@ -6,6 +6,8 @@ Determining compilation order of HDL files
 Analyzing Verilog file "D:/Study/PLIS/CommandCalculator/PLIS_Project/TEST.vf" into library work
 Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Parsing VHDL file "D:/Study/PLIS/CommandCalculator/PLIS_Project/Special_Counter.vhd" into library work
+Parsing VHDL file "D:/Study/PLIS/CommandCalculator/PLIS_Project/const_MODC2.vhd" into library work
+Parsing VHDL file "D:/Study/PLIS/CommandCalculator/PLIS_Project/const_MODC.vhd" into library work
 Parsing VHDL file "D:/Study/PLIS/CommandCalculator/PLIS_Project/TEST_Scheme.vhd" into library work
 Starting static elaboration
 Completed static elaboration
@@ -19,11 +21,13 @@ Compiling package vl_types
 Compiling package std_logic_arith
 Compiling package std_logic_unsigned
 Compiling architecture behavioral of entity Special_Counter [special_counter_default]
+Compiling architecture behavioral of entity const_MODC [const_modc_default]
+Compiling architecture behavioral of entity const_MODC2 [const_modc2_default]
 Compiling architecture behavioral of entity test_test_sch_tb
 Time Resolution for simulation is 1ps.
-Waiting for 3 sub-compilation(s) to finish...
-Compiled 10 VHDL Units
+Waiting for 5 sub-compilation(s) to finish...
+Compiled 14 VHDL Units
 Compiled 2 Verilog Units
 Built simulation executable D:/Study/PLIS/CommandCalculator/PLIS_Project/TEST_TEST_sch_tb_isim_beh.exe
-Fuse Memory Usage: 50704 KB
-Fuse CPU Usage: 671 ms
+Fuse Memory Usage: 50224 KB
+Fuse CPU Usage: 827 ms
