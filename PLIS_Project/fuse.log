@@ -1,33 +1,39 @@
-Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/Study/PLIS/CommandCalculator/PLIS_Project/TEST_TEST_sch_tb_isim_beh.exe -prj D:/Study/PLIS/CommandCalculator/PLIS_Project/TEST_TEST_sch_tb_beh.prj work.TEST_TEST_sch_tb work.glbl 
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/Study/PLIS/CommandCalculator/PLIS_Project/H_Synch_H_Synch_sch_tb_isim_beh.exe -prj D:/Study/PLIS/CommandCalculator/PLIS_Project/H_Synch_H_Synch_sch_tb_beh.prj work.H_Synch_H_Synch_sch_tb work.glbl 
 ISim P.20131013 (signature 0x7708f090)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
-Analyzing Verilog file "D:/Study/PLIS/CommandCalculator/PLIS_Project/TEST.vf" into library work
+Analyzing Verilog file "D:/Study/PLIS/CommandCalculator/PLIS_Project/H_Synch.vf" into library work
 Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Parsing VHDL file "D:/Study/PLIS/CommandCalculator/PLIS_Project/Special_Counter.vhd" into library work
-Parsing VHDL file "D:/Study/PLIS/CommandCalculator/PLIS_Project/const_MODC2.vhd" into library work
-Parsing VHDL file "D:/Study/PLIS/CommandCalculator/PLIS_Project/const_MODC.vhd" into library work
-Parsing VHDL file "D:/Study/PLIS/CommandCalculator/PLIS_Project/TEST_Scheme.vhd" into library work
+Parsing VHDL file "D:/Study/PLIS/CommandCalculator/PLIS_Project/const_MODC_PulseWidth.vhd" into library work
+Parsing VHDL file "D:/Study/PLIS/CommandCalculator/PLIS_Project/const_MODC_FrontPorch.vhd" into library work
+Parsing VHDL file "D:/Study/PLIS/CommandCalculator/PLIS_Project/const_MODC_Display.vhd" into library work
+Parsing VHDL file "D:/Study/PLIS/CommandCalculator/PLIS_Project/const_MODC_BackPorch.vhd" into library work
+Parsing VHDL file "D:/Study/PLIS/CommandCalculator/PLIS_Project/T_H_Synch.vhd" into library work
 Starting static elaboration
 Completed static elaboration
 Compiling module glbl
-Compiling module TEST
+Compiling module AND2
+Compiling module OR3
+Compiling module H_Synch
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
 Compiling package vcomponents
 Compiling package vl_types
+Compiling architecture behavioral of entity const_MODC_PulseWidth [const_modc_pulsewidth_default]
+Compiling architecture behavioral of entity const_MODC_BackPorch [const_modc_backporch_default]
+Compiling architecture behavioral of entity const_MODC_Display [const_modc_display_default]
+Compiling architecture behavioral of entity const_MODC_FrontPorch [const_modc_frontporch_default]
 Compiling package std_logic_arith
 Compiling package std_logic_unsigned
 Compiling architecture behavioral of entity Special_Counter [special_counter_default]
-Compiling architecture behavioral of entity const_MODC [const_modc_default]
-Compiling architecture behavioral of entity const_MODC2 [const_modc2_default]
-Compiling architecture behavioral of entity test_test_sch_tb
+Compiling architecture behavioral of entity h_synch_h_synch_sch_tb
 Time Resolution for simulation is 1ps.
 Waiting for 5 sub-compilation(s) to finish...
-Compiled 14 VHDL Units
-Compiled 2 Verilog Units
-Built simulation executable D:/Study/PLIS/CommandCalculator/PLIS_Project/TEST_TEST_sch_tb_isim_beh.exe
-Fuse Memory Usage: 50224 KB
-Fuse CPU Usage: 827 ms
+Compiled 18 VHDL Units
+Compiled 4 Verilog Units
+Built simulation executable D:/Study/PLIS/CommandCalculator/PLIS_Project/H_Synch_H_Synch_sch_tb_isim_beh.exe
+Fuse Memory Usage: 50984 KB
+Fuse CPU Usage: 796 ms

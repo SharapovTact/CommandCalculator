@@ -1,0 +1,2 @@
+vhdtdtfi -lib work const_MODC_PulseWidth.vhd -prj PLIS_Project -o const_MODC_PulseWidth.spl -module const_MODC_PulseWidth -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 const_MODC_PulseWidth.spl D:/Study/PLIS/CommandCalculator/PLIS_Project/const_MODC_PulseWidth.sym 
