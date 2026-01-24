@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : H_Synch.vf
-// /___/   /\     Timestamp : 01/24/2026 14:10:56
+// /___/   /\     Timestamp : 01/24/2026 14:21:45
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -22,83 +22,63 @@
 
 module H_Synch(CLK_25MHz, 
                ENABLE, 
-               BackPorch, 
-               Display, 
-               FrontPorch, 
-               PulseWidth, 
-               Q1, 
-               Q2, 
-               Q3, 
-               Q4, 
                Synch_Pulse);
 
     input CLK_25MHz;
     input ENABLE;
-   output BackPorch;
-   output Display;
-   output FrontPorch;
-   output PulseWidth;
-   output [9:0] Q1;
-   output [9:0] Q2;
-   output [9:0] Q3;
-   output [9:0] Q4;
    output Synch_Pulse;
    
    wire XLXN_2;
    wire XLXN_3;
-   wire XLXN_5;
    wire [9:0] XLXN_8;
    wire [9:0] XLXN_9;
    wire [9:0] XLXN_10;
    wire [9:0] XLXN_11;
    wire XLXN_54;
-   wire XLXN_59;
-   wire BackPorch_DUMMY;
-   wire FrontPorch_DUMMY;
-   wire Display_DUMMY;
-   wire PulseWidth_DUMMY;
+   wire XLXN_81;
+   wire XLXN_88;
+   wire XLXN_92;
+   wire XLXN_93;
+   wire XLXN_94;
+   wire XLXN_95;
    
-   assign BackPorch = BackPorch_DUMMY;
-   assign Display = Display_DUMMY;
-   assign FrontPorch = FrontPorch_DUMMY;
-   assign PulseWidth = PulseWidth_DUMMY;
    const_MODC_PulseWidth  XLXI_1 (.MODC(XLXN_8[9:0]));
    const_MODC_BackPorch  XLXI_2 (.MODC(XLXN_9[9:0]));
    const_MODC_Display  XLXI_3 (.MODC(XLXN_10[9:0]));
    const_MODC_FrontPorch  XLXI_4 (.MODC(XLXN_11[9:0]));
    Special_Counter  XLXI_5 (.CLK(XLXN_54), 
-                           .ENDCOUNT(BackPorch_DUMMY), 
+                           .ENDCOUNT(XLXN_92), 
                            .MODC(XLXN_8[9:0]), 
-                           .RST(XLXN_5), 
-                           .Q(Q1[9:0]), 
-                           .STATE(PulseWidth_DUMMY), 
+                           .RST(XLXN_81), 
+                           .Q(), 
+                           .STATE(XLXN_95), 
                            .TRNSPRNT(XLXN_2));
    Special_Counter  XLXI_6 (.CLK(XLXN_2), 
-                           .ENDCOUNT(Display_DUMMY), 
+                           .ENDCOUNT(XLXN_93), 
                            .MODC(XLXN_9[9:0]), 
-                           .RST(XLXN_5), 
-                           .Q(Q2[9:0]), 
-                           .STATE(BackPorch_DUMMY), 
-                           .TRNSPRNT(XLXN_59));
-   Special_Counter  XLXI_7 (.CLK(XLXN_59), 
-                           .ENDCOUNT(FrontPorch_DUMMY), 
+                           .RST(XLXN_81), 
+                           .Q(), 
+                           .STATE(XLXN_92), 
+                           .TRNSPRNT(XLXN_88));
+   Special_Counter  XLXI_7 (.CLK(XLXN_88), 
+                           .ENDCOUNT(XLXN_94), 
                            .MODC(XLXN_10[9:0]), 
-                           .RST(XLXN_5), 
-                           .Q(Q3[9:0]), 
-                           .STATE(Display_DUMMY), 
+                           .RST(XLXN_81), 
+                           .Q(), 
+                           .STATE(XLXN_93), 
                            .TRNSPRNT(XLXN_3));
    Special_Counter  XLXI_8 (.CLK(XLXN_3), 
-                           .ENDCOUNT(PulseWidth_DUMMY), 
+                           .ENDCOUNT(XLXN_95), 
                            .MODC(XLXN_11[9:0]), 
-                           .RST(XLXN_5), 
-                           .Q(Q4[9:0]), 
-                           .STATE(FrontPorch_DUMMY), 
-                           .TRNSPRNT(XLXN_5));
+                           .RST(XLXN_81), 
+                           .Q(), 
+                           .STATE(XLXN_94), 
+                           .TRNSPRNT(XLXN_81));
    AND2  XLXI_27 (.I0(ENABLE), 
                  .I1(CLK_25MHz), 
                  .O(XLXN_54));
-   OR3  XLXI_28 (.I0(FrontPorch_DUMMY), 
-                .I1(Display_DUMMY), 
-                .I2(BackPorch_DUMMY), 
+   OR3  XLXI_28 (.I0(XLXN_94), 
+                .I1(XLXN_93), 
+                .I2(XLXN_92), 
                 .O(Synch_Pulse));
 endmodule

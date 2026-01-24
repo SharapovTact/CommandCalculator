@@ -66,9 +66,9 @@
     </file>
     <file xil_pn:name="T_H_Synch.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="7"/>
-      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="57"/>
-      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="57"/>
-      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="57"/>
+      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="74"/>
+      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="74"/>
+      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="74"/>
     </file>
   </files>
 

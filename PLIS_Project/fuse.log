@@ -35,5 +35,5 @@ Waiting for 6 sub-compilation(s) to finish...
 Compiled 18 VHDL Units
 Compiled 4 Verilog Units
 Built simulation executable D:/Study/PLIS/CommandCalculator/PLIS_Project/H_Synch_H_Synch_sch_tb_isim_beh.exe
-Fuse Memory Usage: 50912 KB
-Fuse CPU Usage: 827 ms
+Fuse Memory Usage: 50952 KB
+Fuse CPU Usage: 1046 ms

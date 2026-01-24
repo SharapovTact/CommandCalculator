@@ -1,4 +1,4 @@
--- Vhdl test bench created from schematic D:\Study\PLIS\CommandCalculator\PLIS_Project\H_Synch.sch - Sat Jan 24 12:56:43 2026
+-- Vhdl test bench created from schematic D:\Study\PLIS\CommandCalculator\PLIS_Project\H_Synch.sch - Sat Jan 24 14:20:54 2026
 --
 -- Notes: 
 -- 1) This testbench template has been automatically generated using types
@@ -22,47 +22,22 @@ END H_Synch_H_Synch_sch_tb;
 ARCHITECTURE behavioral OF H_Synch_H_Synch_sch_tb IS 
 
    COMPONENT H_Synch
-   PORT( BackPorch	:	OUT	STD_LOGIC; 
-          Display	:	OUT	STD_LOGIC; 
-          FrontPorch	:	OUT	STD_LOGIC; 
-          Synch_Pulse	:	OUT	STD_LOGIC; 
+   PORT( Synch_Pulse	:	OUT	STD_LOGIC; 
           CLK_25MHz	:	IN	STD_LOGIC; 
-          ENABLE	:	IN	STD_LOGIC; 
-          PulseWidth	:	OUT	STD_LOGIC; 
-          Q1	:	OUT	STD_LOGIC_VECTOR (9 DOWNTO 0); 
-          Q2	:	OUT	STD_LOGIC_VECTOR (9 DOWNTO 0); 
-          Q3	:	OUT	STD_LOGIC_VECTOR (9 DOWNTO 0); 
-          Q4	:	OUT	STD_LOGIC_VECTOR (9 DOWNTO 0));
+          ENABLE	:	IN	STD_LOGIC);
    END COMPONENT;
 
-   SIGNAL BackPorch	:	STD_LOGIC;
-   SIGNAL Display	:	STD_LOGIC;
-   SIGNAL FrontPorch	:	STD_LOGIC;
    SIGNAL Synch_Pulse	:	STD_LOGIC;
    SIGNAL CLK_25MHz	:	STD_LOGIC;
    SIGNAL ENABLE	:	STD_LOGIC;
-   SIGNAL PulseWidth	:	STD_LOGIC;
-   SIGNAL Q1	:	STD_LOGIC_VECTOR (9 DOWNTO 0);
-   SIGNAL Q2	:	STD_LOGIC_VECTOR (9 DOWNTO 0);
-   SIGNAL Q3	:	STD_LOGIC_VECTOR (9 DOWNTO 0);
-   SIGNAL Q4	:	STD_LOGIC_VECTOR (9 DOWNTO 0);
 
 BEGIN
 
    UUT: H_Synch PORT MAP(
-		BackPorch => BackPorch, 
-		Display => Display, 
-		FrontPorch => FrontPorch, 
 		Synch_Pulse => Synch_Pulse, 
 		CLK_25MHz => CLK_25MHz, 
-		ENABLE => ENABLE, 
-		PulseWidth => PulseWidth, 
-		Q1 => Q1, 
-		Q2 => Q2, 
-		Q3 => Q3, 
-		Q4 => Q4
+		ENABLE => ENABLE
    );
-
 	test_proc : process
 	begin	
 		ENABLE <= '1';
@@ -71,5 +46,4 @@ BEGIN
 		CLK_25MHz <= '0';
 		wait for 20 ns;
 	end process;
-
 END;
