@@ -31,9 +31,9 @@ Compiling package std_logic_unsigned
 Compiling architecture behavioral of entity Special_Counter [special_counter_default]
 Compiling architecture behavioral of entity h_synch_h_synch_sch_tb
 Time Resolution for simulation is 1ps.
-Waiting for 5 sub-compilation(s) to finish...
+Waiting for 6 sub-compilation(s) to finish...
 Compiled 18 VHDL Units
 Compiled 4 Verilog Units
 Built simulation executable D:/Study/PLIS/CommandCalculator/PLIS_Project/H_Synch_H_Synch_sch_tb_isim_beh.exe
-Fuse Memory Usage: 50984 KB
-Fuse CPU Usage: 796 ms
+Fuse Memory Usage: 50948 KB
+Fuse CPU Usage: 827 ms

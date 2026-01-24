@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : H_Synch.vf
-// /___/   /\     Timestamp : 01/22/2026 11:18:54
+// /___/   /\     Timestamp : 01/24/2026 13:01:21
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -22,25 +22,44 @@
 
 module H_Synch(CLK_25MHz, 
                ENABLE, 
+               BackPorch, 
+               Display, 
+               FrontPorch, 
+               PulseWidth, 
+               Q1, 
+               Q2, 
+               Q3, 
+               Q4, 
                Synch_Pulse);
 
     input CLK_25MHz;
     input ENABLE;
+   output BackPorch;
+   output Display;
+   output FrontPorch;
+   output PulseWidth;
+   output [9:0] Q1;
+   output [9:0] Q2;
+   output [9:0] Q3;
+   output [9:0] Q4;
    output Synch_Pulse;
    
-   wire BackPorch;
-   wire Display;
-   wire FrontPorch;
    wire XLXN_2;
    wire XLXN_3;
-   wire XLXN_4;
    wire XLXN_5;
    wire [9:0] XLXN_8;
    wire [9:0] XLXN_9;
    wire [9:0] XLXN_10;
    wire [9:0] XLXN_11;
    wire XLXN_54;
+   wire XLXN_59;
+   wire BackPorch_DUMMY;
+   wire FrontPorch_DUMMY;
+   wire Display_DUMMY;
    
+   assign BackPorch = BackPorch_DUMMY;
+   assign Display = Display_DUMMY;
+   assign FrontPorch = FrontPorch_DUMMY;
    const_MODC_PulseWidth  XLXI_1 (.MODC(XLXN_8[9:0]));
    const_MODC_BackPorch  XLXI_2 (.MODC(XLXN_9[9:0]));
    const_MODC_Display  XLXI_3 (.MODC(XLXN_10[9:0]));
@@ -48,32 +67,32 @@ module H_Synch(CLK_25MHz,
    Special_Counter  XLXI_5 (.CLK(XLXN_54), 
                            .MODC(XLXN_8[9:0]), 
                            .RST(XLXN_5), 
-                           .Q(), 
-                           .STATE(), 
+                           .Q(Q1[9:0]), 
+                           .STATE(PulseWidth), 
                            .TRNSPRNT(XLXN_2));
    Special_Counter  XLXI_6 (.CLK(XLXN_2), 
                            .MODC(XLXN_9[9:0]), 
                            .RST(XLXN_5), 
-                           .Q(), 
-                           .STATE(BackPorch), 
-                           .TRNSPRNT(XLXN_4));
-   Special_Counter  XLXI_7 (.CLK(XLXN_4), 
+                           .Q(Q2[9:0]), 
+                           .STATE(BackPorch_DUMMY), 
+                           .TRNSPRNT(XLXN_59));
+   Special_Counter  XLXI_7 (.CLK(XLXN_59), 
                            .MODC(XLXN_10[9:0]), 
                            .RST(XLXN_5), 
-                           .Q(), 
-                           .STATE(Display), 
+                           .Q(Q3[9:0]), 
+                           .STATE(Display_DUMMY), 
                            .TRNSPRNT(XLXN_3));
    Special_Counter  XLXI_8 (.CLK(XLXN_3), 
                            .MODC(XLXN_11[9:0]), 
                            .RST(XLXN_5), 
-                           .Q(), 
-                           .STATE(FrontPorch), 
-                           .TRNSPRNT(XLXN_4));
+                           .Q(Q4[9:0]), 
+                           .STATE(FrontPorch_DUMMY), 
+                           .TRNSPRNT(XLXN_5));
    AND2  XLXI_27 (.I0(ENABLE), 
                  .I1(CLK_25MHz), 
                  .O(XLXN_54));
-   OR3  XLXI_28 (.I0(FrontPorch), 
-                .I1(Display), 
-                .I2(BackPorch), 
+   OR3  XLXI_28 (.I0(FrontPorch_DUMMY), 
+                .I1(Display_DUMMY), 
+                .I2(BackPorch_DUMMY), 
                 .O(Synch_Pulse));
 endmodule

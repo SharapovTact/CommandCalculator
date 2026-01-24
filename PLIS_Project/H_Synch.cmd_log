@@ -1,1 +1,13 @@
 sch2sym -intstyle ise -family spartan6 -refsym H_Synch D:/Study/PLIS/CommandCalculator/PLIS_Project/H_Synch.sch D:/Study/PLIS/CommandCalculator/PLIS_Project/H_Synch.sym 
+sch2sym -intstyle ise -family spartan6 -refsym H_Synch D:/Study/PLIS/CommandCalculator/PLIS_Project/H_Synch.sch D:/Study/PLIS/CommandCalculator/PLIS_Project/H_Synch.sym 
+sch2sym -intstyle ise -family spartan6 -refsym H_Synch D:/Study/PLIS/CommandCalculator/PLIS_Project/H_Synch.sch D:/Study/PLIS/CommandCalculator/PLIS_Project/H_Synch.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog H_Synch_drc.vf -w D:/Study/PLIS/CommandCalculator/PLIS_Project/H_Synch.sch 
+sch2sym -intstyle ise -family spartan6 -refsym H_Synch D:/Study/PLIS/CommandCalculator/PLIS_Project/H_Synch.sch D:/Study/PLIS/CommandCalculator/PLIS_Project/H_Synch.sym 
+sch2sym -intstyle ise -family spartan6 -refsym H_Synch D:/Study/PLIS/CommandCalculator/PLIS_Project/H_Synch.sch D:/Study/PLIS/CommandCalculator/PLIS_Project/H_Synch.sym 
+sch2sym -intstyle ise -family spartan6 -refsym H_Synch D:/Study/PLIS/CommandCalculator/PLIS_Project/H_Synch.sch D:/Study/PLIS/CommandCalculator/PLIS_Project/H_Synch.sym 
+sch2sym -intstyle ise -family spartan6 -refsym H_Synch D:/Study/PLIS/CommandCalculator/PLIS_Project/H_Synch.sch D:/Study/PLIS/CommandCalculator/PLIS_Project/H_Synch.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym H_Synch D:/Study/PLIS/CommandCalculator/PLIS_Project/H_Synch.sch D:/Study/PLIS/CommandCalculator/PLIS_Project/H_Synch.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog H_Synch_drc.vf -w D:/Study/PLIS/CommandCalculator/PLIS_Project/H_Synch.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym H_Synch D:/Study/PLIS/CommandCalculator/PLIS_Project/H_Synch.sch D:/Study/PLIS/CommandCalculator/PLIS_Project/H_Synch.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym H_Synch D:/Study/PLIS/CommandCalculator/PLIS_Project/H_Synch.sch D:/Study/PLIS/CommandCalculator/PLIS_Project/H_Synch.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym H_Synch D:/Study/PLIS/CommandCalculator/PLIS_Project/H_Synch.sch D:/Study/PLIS/CommandCalculator/PLIS_Project/H_Synch.sym 

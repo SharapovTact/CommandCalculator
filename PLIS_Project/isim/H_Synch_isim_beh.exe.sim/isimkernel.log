@@ -1,0 +1,28 @@
+Command line:
+   H_Synch_isim_beh.exe
+     -simmode  gui
+     -simrunnum  1
+     -socket  59507
+
+Sat Jan 24 12:41:45 2026
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 5155.25 Meg
+
+ Total Signals          : 71
+ Total Nets             : 244
+ Total Signal Drivers   : 54
+ Total Blocks           : 15
+ Total Primitive Blocks : 14
+ Total Processes        : 47
+ Total Traceable Variables  : 28
+ Total Scalar Nets and Variables : 702
+
+ Total Simulation Time: 0.046875 sec
+
+ Current Memory Usage: 5155.25 Meg
+
+Sat Jan 24 12:41:54 2026
+

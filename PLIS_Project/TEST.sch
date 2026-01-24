@@ -10,7 +10,6 @@
         <signal name="XLXN_10" />
         <signal name="XLXN_8(9:0)" />
         <signal name="CLK" />
-        <signal name="XLXN_14" />
         <signal name="XLXN_15" />
         <signal name="Q1(9:0)" />
         <signal name="Q2(9:0)" />
@@ -18,7 +17,7 @@
         <port polarity="Output" name="Q1(9:0)" />
         <port polarity="Output" name="Q2(9:0)" />
         <blockdef name="Special_Counter">
-            <timestamp>2026-1-17T7:52:55</timestamp>
+            <timestamp>2026-1-24T9:39:59</timestamp>
             <rect width="368" x="64" y="-128" height="192" />
             <line x2="0" y1="-32" y2="-32" x1="64" />
             <line x2="0" y1="32" y2="32" x1="64" />
