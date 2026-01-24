@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : H_Synch.vf
-// /___/   /\     Timestamp : 01/24/2026 13:01:21
+// /___/   /\     Timestamp : 01/24/2026 14:10:56
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -56,33 +56,39 @@ module H_Synch(CLK_25MHz,
    wire BackPorch_DUMMY;
    wire FrontPorch_DUMMY;
    wire Display_DUMMY;
+   wire PulseWidth_DUMMY;
    
    assign BackPorch = BackPorch_DUMMY;
    assign Display = Display_DUMMY;
    assign FrontPorch = FrontPorch_DUMMY;
+   assign PulseWidth = PulseWidth_DUMMY;
    const_MODC_PulseWidth  XLXI_1 (.MODC(XLXN_8[9:0]));
    const_MODC_BackPorch  XLXI_2 (.MODC(XLXN_9[9:0]));
    const_MODC_Display  XLXI_3 (.MODC(XLXN_10[9:0]));
    const_MODC_FrontPorch  XLXI_4 (.MODC(XLXN_11[9:0]));
    Special_Counter  XLXI_5 (.CLK(XLXN_54), 
+                           .ENDCOUNT(BackPorch_DUMMY), 
                            .MODC(XLXN_8[9:0]), 
                            .RST(XLXN_5), 
                            .Q(Q1[9:0]), 
-                           .STATE(PulseWidth), 
+                           .STATE(PulseWidth_DUMMY), 
                            .TRNSPRNT(XLXN_2));
    Special_Counter  XLXI_6 (.CLK(XLXN_2), 
+                           .ENDCOUNT(Display_DUMMY), 
                            .MODC(XLXN_9[9:0]), 
                            .RST(XLXN_5), 
                            .Q(Q2[9:0]), 
                            .STATE(BackPorch_DUMMY), 
                            .TRNSPRNT(XLXN_59));
    Special_Counter  XLXI_7 (.CLK(XLXN_59), 
+                           .ENDCOUNT(FrontPorch_DUMMY), 
                            .MODC(XLXN_10[9:0]), 
                            .RST(XLXN_5), 
                            .Q(Q3[9:0]), 
                            .STATE(Display_DUMMY), 
                            .TRNSPRNT(XLXN_3));
    Special_Counter  XLXI_8 (.CLK(XLXN_3), 
+                           .ENDCOUNT(PulseWidth_DUMMY), 
                            .MODC(XLXN_11[9:0]), 
                            .RST(XLXN_5), 
                            .Q(Q4[9:0]), 

@@ -1,6 +1,7 @@
 [Inputs]
 CLK
 RST
+ENDCOUNT
 =MODC[9:0]=
 [Outputs]
 STATE

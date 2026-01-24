@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="Special_Counter">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2026-1-24T9:48:14</timestamp>
+    <timestamp>2026-1-24T11:10:45</timestamp>
     <pin polarity="Input" x="0" y="-32" name="CLK" />
     <pin polarity="Input" x="0" y="32" name="RST" />
+    <pin polarity="Input" x="0" y="96" name="ENDCOUNT" />
     <pin polarity="Input" x="0" y="-96" name="MODC(9:0)" />
     <pin polarity="Output" x="496" y="32" name="STATE" />
     <pin polarity="Output" x="496" y="-96" name="TRNSPRNT" />
@@ -12,11 +13,11 @@
         <attrtext style="alignment:BCENTER;fontsize:56;fontname:Arial" attrname="SymbolName" x="256" y="-132" type="symbol" />
         <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-32" type="pin CLK" />
         <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="32" type="pin RST" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="96" type="pin ENDCOUNT" />
         <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-96" type="pin MODC(9:0)" />
         <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="424" y="36" type="pin STATE" />
         <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="424" y="-96" type="pin TRNSPRNT" />
         <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="424" y="-32" type="pin Q(9:0)" />
-        <rect width="368" x="64" y="-128" height="192" />
         <line x2="0" y1="-32" y2="-32" x1="64" />
         <line x2="0" y1="32" y2="32" x1="64" />
         <rect width="64" x="0" y="-108" height="24" />
@@ -25,5 +26,7 @@
         <line x2="496" y1="-32" y2="-32" x1="432" />
         <line x2="496" y1="-96" y2="-96" x1="432" />
         <line x2="496" y1="32" y2="32" x1="432" />
+        <rect width="368" x="64" y="-128" height="320" />
+        <line x2="0" y1="96" y2="96" x1="64" />
     </graph>
 </symbol>
