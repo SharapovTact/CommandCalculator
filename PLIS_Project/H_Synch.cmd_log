@@ -14,3 +14,4 @@ sch2sym -intstyle ise -family spartan6 -w -refsym H_Synch D:/Study/PLIS/CommandC
 sch2sym -intstyle ise -family spartan6 -w -refsym H_Synch D:/Study/PLIS/CommandCalculator/PLIS_Project/H_Synch.sch D:/Study/PLIS/CommandCalculator/PLIS_Project/H_Synch.sym 
 sch2sym -intstyle ise -family spartan6 -w -refsym H_Synch D:/Study/PLIS/CommandCalculator/PLIS_Project/H_Synch.sch D:/Study/PLIS/CommandCalculator/PLIS_Project/H_Synch.sym 
 sch2sym -intstyle ise -family spartan6 -w -refsym H_Synch D:/Study/PLIS/CommandCalculator/PLIS_Project/H_Synch.sch D:/Study/PLIS/CommandCalculator/PLIS_Project/H_Synch.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym H_Synch D:/Study/PLIS/CommandCalculator/PLIS_Project/H_Synch.sch D:/Study/PLIS/CommandCalculator/PLIS_Project/H_Synch.sym 

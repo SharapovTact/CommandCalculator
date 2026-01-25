@@ -1,0 +1,4 @@
+[Inputs]
+[Outputs]
+=MODC[9:0]=
+[BiDir]

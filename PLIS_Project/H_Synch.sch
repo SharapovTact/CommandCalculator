@@ -16,23 +16,8 @@
         <signal name="XLXN_54" />
         <signal name="CLK_25MHz" />
         <signal name="ENABLE" />
-        <signal name="XLXN_60" />
-        <signal name="XLXN_61" />
-        <signal name="XLXN_62" />
-        <signal name="XLXN_63" />
-        <signal name="XLXN_70" />
-        <signal name="XLXN_75" />
-        <signal name="XLXN_76" />
-        <signal name="XLXN_77" />
-        <signal name="XLXN_78" />
-        <signal name="XLXN_79" />
-        <signal name="XLXN_80" />
         <signal name="XLXN_81" />
-        <signal name="XLXN_87" />
         <signal name="XLXN_88" />
-        <signal name="XLXN_89" />
-        <signal name="XLXN_90" />
-        <signal name="XLXN_91" />
         <signal name="XLXN_92" />
         <signal name="XLXN_93" />
         <signal name="XLXN_94" />
@@ -65,7 +50,7 @@
             <line x2="384" y1="-32" y2="-32" x1="320" />
         </blockdef>
         <blockdef name="Special_Counter">
-            <timestamp>2026-1-24T11:10:45</timestamp>
+            <timestamp>2026-1-25T11:40:2</timestamp>
             <line x2="0" y1="-32" y2="-32" x1="64" />
             <line x2="0" y1="32" y2="32" x1="64" />
             <rect width="64" x="0" y="-108" height="24" />

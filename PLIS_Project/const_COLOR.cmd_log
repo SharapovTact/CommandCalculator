@@ -1,0 +1,2 @@
+vhdtdtfi -lib work const_COLOR.vhd -prj PLIS_Project -o const_COLOR.spl -module const_COLOR -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 -w const_COLOR.spl D:/Study/PLIS/CommandCalculator/PLIS_Project/const_COLOR.sym 

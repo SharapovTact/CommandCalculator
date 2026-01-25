@@ -1,0 +1,267 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 2.00 secs
+Total CPU time to Xst completion: 1.64 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 2.00 secs
+Total CPU time to Xst completion: 1.64 secs
+ 
+--> Reading design: VGA_Oscillator.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "VGA_Oscillator.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "VGA_Oscillator"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : VGA_Oscillator
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\Study\PLIS\CommandCalculator\PLIS_Project\H_Synch.vf" into library work
+Parsing module <H_Synch>.
+Analyzing Verilog file "D:\Study\PLIS\CommandCalculator\PLIS_Project\V_Synch.vf" into library work
+Parsing module <H_Synch_MUSER_V_Synch>.
+Parsing module <V_Synch>.
+Analyzing Verilog file "D:\Study\PLIS\CommandCalculator\PLIS_Project\VGA_Oscillator.vf" into library work
+Parsing module <H_Synch_MUSER_VGA_Oscillator>.
+Parsing module <V_Synch_MUSER_VGA_Oscillator>.
+Parsing module <VGA_Oscillator>.
+Parsing VHDL file "D:\Study\PLIS\CommandCalculator\PLIS_Project\Special_Counter.vhd" into library work
+Parsing entity <Special_Counter>.
+Parsing architecture <Behavioral> of entity <special_counter>.
+Parsing VHDL file "D:\Study\PLIS\CommandCalculator\PLIS_Project\const_MODC_PulseWidth.vhd" into library work
+Parsing entity <const_MODC_PulseWidth>.
+Parsing architecture <Behavioral> of entity <const_modc_pulsewidth>.
+Parsing VHDL file "D:\Study\PLIS\CommandCalculator\PLIS_Project\const_MODC_FrontPorch.vhd" into library work
+Parsing entity <const_MODC_FrontPorch>.
+Parsing architecture <Behavioral> of entity <const_modc_frontporch>.
+Parsing VHDL file "D:\Study\PLIS\CommandCalculator\PLIS_Project\const_MODC_Display.vhd" into library work
+Parsing entity <const_MODC_Display>.
+Parsing architecture <Behavioral> of entity <const_modc_display>.
+Parsing VHDL file "D:\Study\PLIS\CommandCalculator\PLIS_Project\const_MODC_BackPorch.vhd" into library work
+Parsing entity <const_MODC_BackPorch>.
+Parsing architecture <Behavioral> of entity <const_modc_backporch>.
+Parsing VHDL file "D:\Study\PLIS\CommandCalculator\PLIS_Project\const_MODC_V_PulseWidth.vhd" into library work
+Parsing entity <const_MODC_V_PulseWidth>.
+Parsing architecture <Behavioral> of entity <const_modc_v_pulsewidth>.
+Parsing VHDL file "D:\Study\PLIS\CommandCalculator\PLIS_Project\const_MODC_V_FrontPorch.vhd" into library work
+Parsing entity <const_MODC_V_FrontPorch>.
+Parsing architecture <Behavioral> of entity <const_modc_v_frontporch>.
+Parsing VHDL file "D:\Study\PLIS\CommandCalculator\PLIS_Project\const_MODC_V_Display.vhd" into library work
+Parsing entity <const_MODC_V_Display>.
+Parsing architecture <Behavioral> of entity <const_modc_v_display>.
+Parsing VHDL file "D:\Study\PLIS\CommandCalculator\PLIS_Project\const_MODC_V_BackPorch.vhd" into library work
+Parsing entity <const_MODC_V_BackPorch>.
+Parsing architecture <Behavioral> of entity <const_modc_v_backporch>.
+Parsing VHDL file "D:\Study\PLIS\CommandCalculator\PLIS_Project\Devider_25MHz.vhd" into library work
+Parsing entity <Divider_25MHz>.
+Parsing architecture <Behavioral> of entity <divider_25mhz>.
+Parsing VHDL file "D:\Study\PLIS\CommandCalculator\PLIS_Project\const_COLOR.vhd" into library work
+Parsing entity <const_COLOR>.
+Parsing architecture <Behavioral> of entity <const_color>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <VGA_Oscillator>.
+
+Elaborating module <V_Synch_MUSER_VGA_Oscillator>.
+
+Elaborating module <H_Synch_MUSER_VGA_Oscillator>.
+Going to vhdl side to elaborate module const_MODC_PulseWidth
+
+Elaborating entity <const_MODC_PulseWidth> (architecture <Behavioral>) from library <work>.
+Back to verilog to continue elaboration
+Going to vhdl side to elaborate module const_MODC_BackPorch
+
+Elaborating entity <const_MODC_BackPorch> (architecture <Behavioral>) from library <work>.
+Back to verilog to continue elaboration
+Going to vhdl side to elaborate module const_MODC_Display
+
+Elaborating entity <const_MODC_Display> (architecture <Behavioral>) from library <work>.
+Back to verilog to continue elaboration
+Going to vhdl side to elaborate module const_MODC_FrontPorch
+
+Elaborating entity <const_MODC_FrontPorch> (architecture <Behavioral>) from library <work>.
+Back to verilog to continue elaboration
+Going to vhdl side to elaborate module Special_Counter
+
+Elaborating entity <Special_Counter> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:92 - "D:\Study\PLIS\CommandCalculator\PLIS_Project\Special_Counter.vhd" Line 22: count should be on the sensitivity list of the process
+ERROR:HDLCompiler:609 - "D:\Study\PLIS\CommandCalculator\PLIS_Project\Special_Counter.vhd" Line 24: Multiple signals in event expression is not synthesizable
+Netlist Special_Counter(Behavioral) remains a blackbox, due to errors in its contents
+Back to verilog to continue elaboration
+Going to vhdl side to elaborate module Special_Counter
+
+Elaborating entity <Special_Counter> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:92 - "D:\Study\PLIS\CommandCalculator\PLIS_Project\Special_Counter.vhd" Line 22: count should be on the sensitivity list of the process
+ERROR:HDLCompiler:609 - "D:\Study\PLIS\CommandCalculator\PLIS_Project\Special_Counter.vhd" Line 24: Multiple signals in event expression is not synthesizable
+Execution of Special_Counter(Behavioral) failed
+Back to verilog to continue elaboration
+Going to vhdl side to elaborate module Special_Counter
+
+Elaborating entity <Special_Counter> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:92 - "D:\Study\PLIS\CommandCalculator\PLIS_Project\Special_Counter.vhd" Line 22: count should be on the sensitivity list of the process
+ERROR:HDLCompiler:609 - "D:\Study\PLIS\CommandCalculator\PLIS_Project\Special_Counter.vhd" Line 24: Multiple signals in event expression is not synthesizable
+Execution of Special_Counter(Behavioral) failed
+Back to verilog to continue elaboration
+Going to vhdl side to elaborate module Special_Counter
+
+Elaborating entity <Special_Counter> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:92 - "D:\Study\PLIS\CommandCalculator\PLIS_Project\Special_Counter.vhd" Line 22: count should be on the sensitivity list of the process
+ERROR:HDLCompiler:609 - "D:\Study\PLIS\CommandCalculator\PLIS_Project\Special_Counter.vhd" Line 24: Multiple signals in event expression is not synthesizable
+Execution of Special_Counter(Behavioral) failed
+Back to verilog to continue elaboration
+
+Elaborating module <AND2>.
+
+Elaborating module <OR3>.
+Going to vhdl side to elaborate module Special_Counter
+
+Elaborating entity <Special_Counter> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:92 - "D:\Study\PLIS\CommandCalculator\PLIS_Project\Special_Counter.vhd" Line 22: count should be on the sensitivity list of the process
+ERROR:HDLCompiler:609 - "D:\Study\PLIS\CommandCalculator\PLIS_Project\Special_Counter.vhd" Line 24: Multiple signals in event expression is not synthesizable
+Execution of Special_Counter(Behavioral) failed
+Back to verilog to continue elaboration
+Going to vhdl side to elaborate module const_MODC_V_PulseWidth
+
+Elaborating entity <const_MODC_V_PulseWidth> (architecture <Behavioral>) from library <work>.
+Back to verilog to continue elaboration
+Going to vhdl side to elaborate module Special_Counter
+
+Elaborating entity <Special_Counter> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:92 - "D:\Study\PLIS\CommandCalculator\PLIS_Project\Special_Counter.vhd" Line 22: count should be on the sensitivity list of the process
+ERROR:HDLCompiler:609 - "D:\Study\PLIS\CommandCalculator\PLIS_Project\Special_Counter.vhd" Line 24: Multiple signals in event expression is not synthesizable
+Execution of Special_Counter(Behavioral) failed
+Back to verilog to continue elaboration
+Going to vhdl side to elaborate module Special_Counter
+
+Elaborating entity <Special_Counter> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:92 - "D:\Study\PLIS\CommandCalculator\PLIS_Project\Special_Counter.vhd" Line 22: count should be on the sensitivity list of the process
+ERROR:HDLCompiler:609 - "D:\Study\PLIS\CommandCalculator\PLIS_Project\Special_Counter.vhd" Line 24: Multiple signals in event expression is not synthesizable
+Execution of Special_Counter(Behavioral) failed
+Back to verilog to continue elaboration
+Going to vhdl side to elaborate module Special_Counter
+
+Elaborating entity <Special_Counter> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:92 - "D:\Study\PLIS\CommandCalculator\PLIS_Project\Special_Counter.vhd" Line 22: count should be on the sensitivity list of the process
+ERROR:HDLCompiler:609 - "D:\Study\PLIS\CommandCalculator\PLIS_Project\Special_Counter.vhd" Line 24: Multiple signals in event expression is not synthesizable
+Execution of Special_Counter(Behavioral) failed
+Back to verilog to continue elaboration
+Going to vhdl side to elaborate module const_MODC_V_BackPorch
+
+Elaborating entity <const_MODC_V_BackPorch> (architecture <Behavioral>) from library <work>.
+Back to verilog to continue elaboration
+Going to vhdl side to elaborate module const_MODC_V_Display
+
+Elaborating entity <const_MODC_V_Display> (architecture <Behavioral>) from library <work>.
+Back to verilog to continue elaboration
+Going to vhdl side to elaborate module const_MODC_V_FrontPorch
+
+Elaborating entity <const_MODC_V_FrontPorch> (architecture <Behavioral>) from library <work>.
+Back to verilog to continue elaboration
+Going to vhdl side to elaborate module Divider_25MHz
+
+Elaborating entity <Divider_25MHz> (architecture <Behavioral>) from library <work>.
+Back to verilog to continue elaboration
+Going to vhdl side to elaborate module const_COLOR
+
+Elaborating entity <const_COLOR> (architecture <Behavioral>) from library <work>.
+Back to verilog to continue elaboration
+--> 
+
+Total memory usage is 4448496 kilobytes
+
+Number of errors   :    8 (   0 filtered)
+Number of warnings :    8 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym VGA_Oscillator D:/Study/PLIS/CommandCalculator/PLIS_Project/VGA_Oscillator.sch D:/Study/PLIS/CommandCalculator/PLIS_Project/VGA_Oscillator.sym 
+xst -intstyle ise -ifn "D:/Study/PLIS/CommandCalculator/PLIS_Project/VGA_Oscillator.xst" -ofn "D:/Study/PLIS/CommandCalculator/PLIS_Project/VGA_Oscillator.syr" 
