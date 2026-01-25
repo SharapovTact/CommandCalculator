@@ -10,7 +10,6 @@
         <signal name="Vertical_Synch" />
         <signal name="ENABLE" />
         <signal name="XLXN_7" />
-        <signal name="XLXN_9" />
         <signal name="CLK_100MHz" />
         <signal name="CLR(7:0)" />
         <port polarity="Output" name="Horizontal_Synch" />

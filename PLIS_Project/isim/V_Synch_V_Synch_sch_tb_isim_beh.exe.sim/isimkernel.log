@@ -2,9 +2,27 @@ Command line:
    V_Synch_V_Synch_sch_tb_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  51607
+     -socket  52783
 
-Sun Jan 25 14:41:20 2026
+Mon Jan 26 01:53:16 2026
 
 
  Elaboration Time: 0.0625 sec
+
+ Current Memory Usage: 5154.8 Meg
+
+ Total Signals          : 198
+ Total Nets             : 544
+ Total Signal Drivers   : 151
+ Total Blocks           : 29
+ Total Primitive Blocks : 26
+ Total Processes        : 111
+ Total Traceable Variables  : 34
+ Total Scalar Nets and Variables : 1126
+
+ Total Simulation Time: 84.1406 sec
+
+ Current Memory Usage: 4840.23 Meg
+
+Mon Jan 26 01:59:52 2026
+

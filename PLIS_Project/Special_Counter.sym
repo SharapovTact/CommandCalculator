@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="Special_Counter">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2026-1-25T11:40:2</timestamp>
+    <timestamp>2026-1-25T22:46:10</timestamp>
     <pin polarity="Input" x="0" y="-32" name="CLK" />
     <pin polarity="Input" x="0" y="32" name="RST" />
     <pin polarity="Input" x="0" y="96" name="ENDCOUNT" />

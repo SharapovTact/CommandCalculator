@@ -17,8 +17,7 @@
         <port polarity="Output" name="Q1(9:0)" />
         <port polarity="Output" name="Q2(9:0)" />
         <blockdef name="Special_Counter">
-            <timestamp>2026-1-24T9:39:59</timestamp>
-            <rect width="368" x="64" y="-128" height="192" />
+            <timestamp>2026-1-25T22:46:10</timestamp>
             <line x2="0" y1="-32" y2="-32" x1="64" />
             <line x2="0" y1="32" y2="32" x1="64" />
             <rect width="64" x="0" y="-108" height="24" />
@@ -27,6 +26,8 @@
             <line x2="496" y1="-32" y2="-32" x1="432" />
             <line x2="496" y1="-96" y2="-96" x1="432" />
             <line x2="496" y1="32" y2="32" x1="432" />
+            <rect width="368" x="64" y="-128" height="320" />
+            <line x2="0" y1="96" y2="96" x1="64" />
         </blockdef>
         <blockdef name="const_MODC">
             <timestamp>2026-1-17T7:58:55</timestamp>
@@ -43,6 +44,7 @@
         <block symbolname="Special_Counter" name="XLXI_6">
             <blockpin signalname="XLXN_10" name="CLK" />
             <blockpin signalname="XLXN_15" name="RST" />
+            <blockpin name="ENDCOUNT" />
             <blockpin signalname="XLXN_9(9:0)" name="MODC(9:0)" />
             <blockpin name="STATE" />
             <blockpin signalname="XLXN_15" name="TRNSPRNT" />
@@ -51,6 +53,7 @@
         <block symbolname="Special_Counter" name="XLXI_5">
             <blockpin signalname="CLK" name="CLK" />
             <blockpin signalname="XLXN_15" name="RST" />
+            <blockpin name="ENDCOUNT" />
             <blockpin signalname="XLXN_8(9:0)" name="MODC(9:0)" />
             <blockpin name="STATE" />
             <blockpin signalname="XLXN_10" name="TRNSPRNT" />
