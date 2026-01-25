@@ -34,14 +34,14 @@ No constraints were found to generate data for the Data Sheet Report section.
 Use the Advanced Analysis (-a) option or generate global constraints for each
 clock, its pad to setup and clock to pad paths, and a pad to pad constraint.
 
-Analysis completed Mon Jan 26 01:47:51 2026 
+Analysis completed Mon Jan 26 02:38:41 2026 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 4552 MB
+Peak Memory Usage: 4553 MB
 
 
 

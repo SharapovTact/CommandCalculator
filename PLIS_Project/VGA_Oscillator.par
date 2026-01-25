@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-DESKTOP-NAORT4C::  Mon Jan 26 01:47:43 2026
+DESKTOP-NAORT4C::  Mon Jan 26 02:38:34 2026
 
 par -w -intstyle ise -ol high -mt off VGA_Oscillator_map.ncd VGA_Oscillator.ncd
 VGA_Oscillator.pcf 
@@ -113,10 +113,10 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 4 secs 
+Total REAL time to PAR completion: 3 secs 
 Total CPU time to PAR completion: 3 secs 
 
-Peak Memory Usage:  4481 MB
+Peak Memory Usage:  4479 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.

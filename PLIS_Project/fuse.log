@@ -1,22 +1,32 @@
-Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/Study/PLIS/CommandCalculator/PLIS_Project/H_Synch_H_Synch_sch_tb_isim_beh.exe -prj D:/Study/PLIS/CommandCalculator/PLIS_Project/H_Synch_H_Synch_sch_tb_beh.prj work.H_Synch_H_Synch_sch_tb work.glbl 
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/Study/PLIS/CommandCalculator/PLIS_Project/VGA_Oscillator_VGA_Oscillator_sch_tb_isim_beh.exe -prj D:/Study/PLIS/CommandCalculator/PLIS_Project/VGA_Oscillator_VGA_Oscillator_sch_tb_beh.prj work.VGA_Oscillator_VGA_Oscillator_sch_tb work.glbl 
 ISim P.20131013 (signature 0x7708f090)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
 Analyzing Verilog file "D:/Study/PLIS/CommandCalculator/PLIS_Project/H_Synch.vf" into library work
+Analyzing Verilog file "D:/Study/PLIS/CommandCalculator/PLIS_Project/V_Synch.vf" into library work
+Analyzing Verilog file "D:/Study/PLIS/CommandCalculator/PLIS_Project/VGA_Oscillator.vf" into library work
 Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Parsing VHDL file "D:/Study/PLIS/CommandCalculator/PLIS_Project/Special_Counter.vhd" into library work
 Parsing VHDL file "D:/Study/PLIS/CommandCalculator/PLIS_Project/const_MODC_PulseWidth.vhd" into library work
 Parsing VHDL file "D:/Study/PLIS/CommandCalculator/PLIS_Project/const_MODC_FrontPorch.vhd" into library work
 Parsing VHDL file "D:/Study/PLIS/CommandCalculator/PLIS_Project/const_MODC_Display.vhd" into library work
 Parsing VHDL file "D:/Study/PLIS/CommandCalculator/PLIS_Project/const_MODC_BackPorch.vhd" into library work
-Parsing VHDL file "D:/Study/PLIS/CommandCalculator/PLIS_Project/T_H_Synch.vhd" into library work
+Parsing VHDL file "D:/Study/PLIS/CommandCalculator/PLIS_Project/const_MODC_V_PulseWidth.vhd" into library work
+Parsing VHDL file "D:/Study/PLIS/CommandCalculator/PLIS_Project/const_MODC_V_FrontPorch.vhd" into library work
+Parsing VHDL file "D:/Study/PLIS/CommandCalculator/PLIS_Project/const_MODC_V_Display.vhd" into library work
+Parsing VHDL file "D:/Study/PLIS/CommandCalculator/PLIS_Project/const_MODC_V_BackPorch.vhd" into library work
+Parsing VHDL file "D:/Study/PLIS/CommandCalculator/PLIS_Project/Devider_25MHz.vhd" into library work
+Parsing VHDL file "D:/Study/PLIS/CommandCalculator/PLIS_Project/const_COLOR.vhd" into library work
+Parsing VHDL file "D:/Study/PLIS/CommandCalculator/PLIS_Project/T_VGA_Oscillator.vhd" into library work
 Starting static elaboration
 Completed static elaboration
 Compiling module glbl
 Compiling module AND2
 Compiling module OR3
-Compiling module H_Synch
+Compiling module H_Synch_MUSER_VGA_Oscillator
+Compiling module V_Synch_MUSER_VGA_Oscillator
+Compiling module VGA_Oscillator
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
@@ -29,11 +39,17 @@ Compiling architecture behavioral of entity const_MODC_FrontPorch [const_modc_fr
 Compiling package std_logic_arith
 Compiling package std_logic_unsigned
 Compiling architecture behavioral of entity Special_Counter [special_counter_default]
-Compiling architecture behavioral of entity h_synch_h_synch_sch_tb
+Compiling architecture behavioral of entity const_MODC_V_PulseWidth [const_modc_v_pulsewidth_default]
+Compiling architecture behavioral of entity const_MODC_V_BackPorch [const_modc_v_backporch_default]
+Compiling architecture behavioral of entity const_MODC_V_Display [const_modc_v_display_default]
+Compiling architecture behavioral of entity const_MODC_V_FrontPorch [const_modc_v_frontporch_default]
+Compiling architecture behavioral of entity Divider_25MHz [divider_25mhz_default]
+Compiling architecture behavioral of entity const_COLOR [const_color_default]
+Compiling architecture behavioral of entity vga_oscillator_vga_oscillator_sc...
 Time Resolution for simulation is 1ps.
-Waiting for 6 sub-compilation(s) to finish...
-Compiled 18 VHDL Units
-Compiled 4 Verilog Units
-Built simulation executable D:/Study/PLIS/CommandCalculator/PLIS_Project/H_Synch_H_Synch_sch_tb_isim_beh.exe
-Fuse Memory Usage: 50384 KB
-Fuse CPU Usage: 858 ms
+Waiting for 12 sub-compilation(s) to finish...
+Compiled 30 VHDL Units
+Compiled 6 Verilog Units
+Built simulation executable D:/Study/PLIS/CommandCalculator/PLIS_Project/VGA_Oscillator_VGA_Oscillator_sch_tb_isim_beh.exe
+Fuse Memory Usage: 51208 KB
+Fuse CPU Usage: 1280 ms

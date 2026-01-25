@@ -1,8 +1,0 @@
-vhdl work "Special_Counter.vhd"
-vhdl work "const_MODC_PulseWidth.vhd"
-vhdl work "const_MODC_FrontPorch.vhd"
-vhdl work "const_MODC_Display.vhd"
-vhdl work "const_MODC_BackPorch.vhd"
-verilog work "H_Synch.vf"
-vhdl work "T_H_Synch.vhd"
-verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

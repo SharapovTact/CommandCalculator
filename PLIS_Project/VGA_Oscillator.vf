@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : VGA_Oscillator.vf
-// /___/   /\     Timestamp : 01/26/2026 01:46:44
+// /___/   /\     Timestamp : 01/26/2026 02:38:16
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -163,13 +163,13 @@ module VGA_Oscillator(CLK_100MHz,
    output Horizontal_Synch;
    output Vertical_Synch;
    
-   wire XLXN_7;
+   wire XLXN_9;
    
-   V_Synch_MUSER_VGA_Oscillator  XLXI_1 (.CLK_25MHz(XLXN_7), 
+   V_Synch_MUSER_VGA_Oscillator  XLXI_1 (.CLK_25MHz(XLXN_9), 
                                         .ENABLE(ENABLE), 
                                         .Horizontal(Horizontal_Synch), 
                                         .Vertical(Vertical_Synch));
    Divider_25MHz  XLXI_2 (.CLK_100MHz(CLK_100MHz), 
-                         .CLK_25MHz(XLXN_7));
+                         .CLK_25MHz(XLXN_9));
    const_COLOR  XLXI_5 (.COLOR(CLR[7:0]));
 endmodule

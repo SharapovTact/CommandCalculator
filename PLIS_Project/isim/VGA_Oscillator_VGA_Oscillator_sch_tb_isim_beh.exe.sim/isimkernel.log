@@ -1,0 +1,28 @@
+Command line:
+   VGA_Oscillator_VGA_Oscillator_sch_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  54218
+
+Mon Jan 26 02:41:41 2026
+
+
+ Elaboration Time: 0.0625 sec
+
+ Current Memory Usage: 5154.78 Meg
+
+ Total Signals          : 208
+ Total Nets             : 571
+ Total Signal Drivers   : 157
+ Total Blocks           : 32
+ Total Primitive Blocks : 28
+ Total Processes        : 117
+ Total Traceable Variables  : 34
+ Total Scalar Nets and Variables : 1153
+
+ Total Simulation Time: 153.156 sec
+
+ Current Memory Usage: 4840.21 Meg
+
+Mon Jan 26 02:47:22 2026
+

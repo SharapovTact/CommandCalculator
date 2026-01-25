@@ -17,6 +17,7 @@ begin
 	end if;
 	if (count = 4) then
 		CLK_25MHz <= '1';
+		count := 0;
 	else
 		CLK_25MHz <= '0';
 	end if;

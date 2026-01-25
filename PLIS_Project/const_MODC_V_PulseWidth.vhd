@@ -7,6 +7,6 @@ end const_MODC_V_PulseWidth;
 architecture Behavioral of const_MODC_V_PulseWidth is
 
 begin
-	MODC <= "0000000010";
+	MODC <= "0000000001";
 end Behavioral;
 
