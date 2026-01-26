@@ -1,0 +1,5 @@
+vhdl work "V_Synch.vhd"
+vhdl work "H_Synch.vhd"
+vhdl work "Divider_25MHz.vhd"
+vhdl work "const_COLOR.vhd"
+verilog work "VGA_Oscillator.vf"

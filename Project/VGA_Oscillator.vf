@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : VGA_Oscillator.vf
-// /___/   /\     Timestamp : 01/26/2026 15:23:22
+// /___/   /\     Timestamp : 01/26/2026 16:12:58
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -21,24 +21,34 @@
 `timescale 1ns / 1ps
 
 module VGA_Oscillator(CLK_100MHz, 
+                      CLK1, 
+                      CLK2, 
                       COLOR, 
-                      DivCLK, 
                       Horizontal, 
-                      Q1);
+                      Vertical);
 
     input CLK_100MHz;
+   output CLK1;
+   output CLK2;
    output [7:0] COLOR;
-   output DivCLK;
    output Horizontal;
-   output [9:0] Q1;
+   output Vertical;
    
-   wire DivCLK_DUMMY;
+   wire XLXN_15;
+   wire Horizontal_DUMMY;
    
-   assign DivCLK = DivCLK_DUMMY;
+   assign Horizontal = Horizontal_DUMMY;
    Divider_25MHz  XLXI_1 (.CLK_100MHz(CLK_100MHz), 
-                         .CLK_25MHz(DivCLK_DUMMY));
-   H_Synch  XLXI_2 (.CLK(DivCLK_DUMMY), 
-                   .Q(Q1[9:0]), 
-                   .Synch(Horizontal));
+                         .CLK_25MHz(XLXN_15));
+   H_Synch  XLXI_2 (.CLK(XLXN_15), 
+                   .Q(), 
+                   .Synch(Horizontal_DUMMY));
    const_COLOR  XLXI_3 (.COLOR(COLOR[7:0]));
+   V_Synch  XLXI_4 (.CLK(Horizontal_DUMMY), 
+                   .Q(), 
+                   .Synch(Vertical));
+   BUF  XLXI_5 (.I(CLK_100MHz), 
+               .O(CLK1));
+   BUF  XLXI_6 (.I(XLXN_15), 
+               .O(CLK2));
 endmodule

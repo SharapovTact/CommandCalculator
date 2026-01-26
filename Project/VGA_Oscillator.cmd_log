@@ -1,3 +1,51 @@
 sch2sym -intstyle ise -family spartan6 -refsym VGA_Oscillator D:/Study/PLIS/CommandCalculator/Project/VGA_Oscillator.sch D:/Study/PLIS/CommandCalculator/Project/VGA_Oscillator.sym 
 sch2sym -intstyle ise -family spartan6 -refsym VGA_Oscillator D:/Study/PLIS/CommandCalculator/Project/VGA_Oscillator.sch D:/Study/PLIS/CommandCalculator/Project/VGA_Oscillator.sym 
 sch2sym -intstyle ise -family spartan6 -w -refsym VGA_Oscillator D:/Study/PLIS/CommandCalculator/Project/VGA_Oscillator.sch D:/Study/PLIS/CommandCalculator/Project/VGA_Oscillator.sym 
+xst -intstyle ise -ifn "D:/Study/PLIS/CommandCalculator/Project/VGA_Oscillator.xst" -ofn "D:/Study/PLIS/CommandCalculator/Project/VGA_Oscillator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 VGA_Oscillator.ngc VGA_Oscillator.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o VGA_Oscillator_map.ncd VGA_Oscillator.ngd VGA_Oscillator.pcf 
+par -w -intstyle ise -ol high -mt off VGA_Oscillator_map.ncd VGA_Oscillator.ncd VGA_Oscillator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml VGA_Oscillator.twx VGA_Oscillator.ncd -o VGA_Oscillator.twr VGA_Oscillator.pcf 
+bitgen -intstyle ise -f VGA_Oscillator.ut VGA_Oscillator.ncd 
+xst -intstyle ise -ifn "D:/Study/PLIS/CommandCalculator/Project/VGA_Oscillator.xst" -ofn "D:/Study/PLIS/CommandCalculator/Project/VGA_Oscillator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Config.ucf -p xc6slx16-csg324-3 VGA_Oscillator.ngc VGA_Oscillator.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o VGA_Oscillator_map.ncd VGA_Oscillator.ngd VGA_Oscillator.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Config.ucf -p xc6slx16-csg324-3 VGA_Oscillator.ngc VGA_Oscillator.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o VGA_Oscillator_map.ncd VGA_Oscillator.ngd VGA_Oscillator.pcf 
+par -w -intstyle ise -ol high -mt off VGA_Oscillator_map.ncd VGA_Oscillator.ncd VGA_Oscillator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml VGA_Oscillator.twx VGA_Oscillator.ncd -o VGA_Oscillator.twr VGA_Oscillator.pcf -ucf Config.ucf 
+bitgen -intstyle ise -f VGA_Oscillator.ut VGA_Oscillator.ncd 
+sch2sym -intstyle ise -family spartan6 -w -refsym VGA_Oscillator D:/Study/PLIS/CommandCalculator/Project/VGA_Oscillator.sch D:/Study/PLIS/CommandCalculator/Project/VGA_Oscillator.sym 
+xst -intstyle ise -ifn "D:/Study/PLIS/CommandCalculator/Project/VGA_Oscillator.xst" -ofn "D:/Study/PLIS/CommandCalculator/Project/VGA_Oscillator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Config.ucf -p xc6slx16-csg324-3 VGA_Oscillator.ngc VGA_Oscillator.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o VGA_Oscillator_map.ncd VGA_Oscillator.ngd VGA_Oscillator.pcf 
+par -w -intstyle ise -ol high -mt off VGA_Oscillator_map.ncd VGA_Oscillator.ncd VGA_Oscillator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml VGA_Oscillator.twx VGA_Oscillator.ncd -o VGA_Oscillator.twr VGA_Oscillator.pcf -ucf Config.ucf 
+bitgen -intstyle ise -f VGA_Oscillator.ut VGA_Oscillator.ncd 
+xst -intstyle ise -ifn "D:/Study/PLIS/CommandCalculator/Project/VGA_Oscillator.xst" -ofn "D:/Study/PLIS/CommandCalculator/Project/VGA_Oscillator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Config.ucf -p xc6slx16-csg324-3 VGA_Oscillator.ngc VGA_Oscillator.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o VGA_Oscillator_map.ncd VGA_Oscillator.ngd VGA_Oscillator.pcf 
+par -w -intstyle ise -ol high -mt off VGA_Oscillator_map.ncd VGA_Oscillator.ncd VGA_Oscillator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml VGA_Oscillator.twx VGA_Oscillator.ncd -o VGA_Oscillator.twr VGA_Oscillator.pcf -ucf Config.ucf 
+bitgen -intstyle ise -f VGA_Oscillator.ut VGA_Oscillator.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Config.ucf -p xc6slx16-csg324-3 VGA_Oscillator.ngc VGA_Oscillator.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o VGA_Oscillator_map.ncd VGA_Oscillator.ngd VGA_Oscillator.pcf 
+par -w -intstyle ise -ol high -mt off VGA_Oscillator_map.ncd VGA_Oscillator.ncd VGA_Oscillator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml VGA_Oscillator.twx VGA_Oscillator.ncd -o VGA_Oscillator.twr VGA_Oscillator.pcf -ucf Config.ucf 
+bitgen -intstyle ise -f VGA_Oscillator.ut VGA_Oscillator.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Config.ucf -p xc6slx16-csg324-3 VGA_Oscillator.ngc VGA_Oscillator.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o VGA_Oscillator_map.ncd VGA_Oscillator.ngd VGA_Oscillator.pcf 
+par -w -intstyle ise -ol high -mt off VGA_Oscillator_map.ncd VGA_Oscillator.ncd VGA_Oscillator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml VGA_Oscillator.twx VGA_Oscillator.ncd -o VGA_Oscillator.twr VGA_Oscillator.pcf -ucf Config.ucf 
+bitgen -intstyle ise -f VGA_Oscillator.ut VGA_Oscillator.ncd 
+xst -intstyle ise -ifn "D:/Study/PLIS/CommandCalculator/Project/VGA_Oscillator.xst" -ofn "D:/Study/PLIS/CommandCalculator/Project/VGA_Oscillator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Config.ucf -p xc6slx16-csg324-3 VGA_Oscillator.ngc VGA_Oscillator.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o VGA_Oscillator_map.ncd VGA_Oscillator.ngd VGA_Oscillator.pcf 
+par -w -intstyle ise -ol high -mt off VGA_Oscillator_map.ncd VGA_Oscillator.ncd VGA_Oscillator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml VGA_Oscillator.twx VGA_Oscillator.ncd -o VGA_Oscillator.twr VGA_Oscillator.pcf -ucf Config.ucf 
+bitgen -intstyle ise -f VGA_Oscillator.ut VGA_Oscillator.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Config.ucf -p xc6slx16-csg324-3 VGA_Oscillator.ngc VGA_Oscillator.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o VGA_Oscillator_map.ncd VGA_Oscillator.ngd VGA_Oscillator.pcf 
+par -w -intstyle ise -ol high -mt off VGA_Oscillator_map.ncd VGA_Oscillator.ncd VGA_Oscillator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml VGA_Oscillator.twx VGA_Oscillator.ncd -o VGA_Oscillator.twr VGA_Oscillator.pcf -ucf Config.ucf 
+bitgen -intstyle ise -f VGA_Oscillator.ut VGA_Oscillator.ncd 

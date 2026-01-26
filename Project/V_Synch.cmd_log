@@ -1,0 +1,2 @@
+vhdtdtfi -lib work V_Synch.vhd -prj Project -o V_Synch.spl -module V_Synch -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 -w V_Synch.spl D:/Study/PLIS/CommandCalculator/Project/V_Synch.sym 
