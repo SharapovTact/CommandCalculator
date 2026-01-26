@@ -1,0 +1,6 @@
+[Inputs]
+CLK
+[Outputs]
+Synch
+=Q[9:0]=
+[BiDir]

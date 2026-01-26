@@ -21,8 +21,89 @@
 
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="Project.xise"/>
 
-  <files xmlns="http://www.xilinx.com/XMLSchema"/>
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Divider_25MHz.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="Divider_25MHz.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Divider_25MHz.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="Divider_25MHz.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="Divider_25MHz.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="H_Synch.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="H_Synch.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="H_Synch.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="H_Synch.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="H_Synch.xst"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="VGA_Oscillator.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="VGA_Oscillator.vf"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="VGA_Oscillator_VGA_Oscillator_sch_tb_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="VGA_Oscillator_VGA_Oscillator_sch_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="VGA_Oscillator_VGA_Oscillator_sch_tb_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="const_COLOR.spl"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="const_COLOR.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
 
-  <transforms xmlns="http://www.xilinx.com/XMLSchema"/>
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1769427101" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1769427101">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1769430202" xil_pn:in_ck="1231576322518202073" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1769430202">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Divider_25MHz.vhd"/>
+      <outfile xil_pn:name="H_Synch.vhd"/>
+      <outfile xil_pn:name="T_VGA_Oscillator.vhd"/>
+      <outfile xil_pn:name="const_COLOR.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1769427101" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-8723869510669626743" xil_pn:start_ts="1769427101">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1769430204" xil_pn:in_ck="8757995482298764805" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="3146826399040987335" xil_pn:start_ts="1769430202">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="VGA_Oscillator.vf"/>
+    </transform>
+    <transform xil_pn:end_ts="1769429286" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-8080650469326404163" xil_pn:start_ts="1769429286">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1769430204" xil_pn:in_ck="-3101994500256701604" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1769430204">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Divider_25MHz.vhd"/>
+      <outfile xil_pn:name="H_Synch.vhd"/>
+      <outfile xil_pn:name="T_VGA_Oscillator.vhd"/>
+      <outfile xil_pn:name="VGA_Oscillator.vf"/>
+      <outfile xil_pn:name="const_COLOR.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1769430208" xil_pn:in_ck="-3101994500256701604" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-6081253572925724350" xil_pn:start_ts="1769430204">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="VGA_Oscillator_VGA_Oscillator_sch_tb_beh.prj"/>
+      <outfile xil_pn:name="VGA_Oscillator_VGA_Oscillator_sch_tb_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1769430208" xil_pn:in_ck="652059378948880754" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="4273792209455247109" xil_pn:start_ts="1769430208">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="VGA_Oscillator_VGA_Oscillator_sch_tb_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+    </transform>
+  </transforms>
 
 </generated_project>

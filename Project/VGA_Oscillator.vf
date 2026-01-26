@@ -1,0 +1,44 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : VGA_Oscillator.vf
+// /___/   /\     Timestamp : 01/26/2026 15:23:22
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog D:/Study/PLIS/CommandCalculator/Project/VGA_Oscillator.vf -w D:/Study/PLIS/CommandCalculator/Project/VGA_Oscillator.sch
+//Design Name: VGA_Oscillator
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module VGA_Oscillator(CLK_100MHz, 
+                      COLOR, 
+                      DivCLK, 
+                      Horizontal, 
+                      Q1);
+
+    input CLK_100MHz;
+   output [7:0] COLOR;
+   output DivCLK;
+   output Horizontal;
+   output [9:0] Q1;
+   
+   wire DivCLK_DUMMY;
+   
+   assign DivCLK = DivCLK_DUMMY;
+   Divider_25MHz  XLXI_1 (.CLK_100MHz(CLK_100MHz), 
+                         .CLK_25MHz(DivCLK_DUMMY));
+   H_Synch  XLXI_2 (.CLK(DivCLK_DUMMY), 
+                   .Q(Q1[9:0]), 
+                   .Synch(Horizontal));
+   const_COLOR  XLXI_3 (.COLOR(COLOR[7:0]));
+endmodule

@@ -1,0 +1,8 @@
+vhdtdtfi -lib work Divider_25MHz.vhd -prj Project -o Divider_25MHz.spl -module Divider_25MHz -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 Divider_25MHz.spl D:/Study/PLIS/CommandCalculator/Project/Divider_25MHz.sym 
+vhdtdtfi -lib work Divider_25MHz.vhd -prj Project -o Divider_25MHz.spl -module Divider_25MHz -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 -w Divider_25MHz.spl D:/Study/PLIS/CommandCalculator/Project/Divider_25MHz.sym 
+vhdtdtfi -lib work Divider_25MHz.vhd -prj Project -o Divider_25MHz.spl -module Divider_25MHz -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 -w Divider_25MHz.spl D:/Study/PLIS/CommandCalculator/Project/Divider_25MHz.sym 
+vhdtdtfi -lib work Divider_25MHz.vhd -prj Project -o Divider_25MHz.spl -module Divider_25MHz -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 -w Divider_25MHz.spl D:/Study/PLIS/CommandCalculator/Project/Divider_25MHz.sym 
