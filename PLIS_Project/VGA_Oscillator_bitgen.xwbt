@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=D:\Study\PLIS\CommandCalculator\PLIS_Project\VGA_Oscillator.ncd
-OUTFILE=D:\Study\PLIS\CommandCalculator\PLIS_Project\VGA_Oscillator.bit
-FAMILY=Spartan6
-PART=xc6slx16-3csg324
-WORKINGDIR=D:\Study\PLIS\CommandCalculator\PLIS_Project
-LICENSE=WebPack
-USER_INFO=__0_0_0

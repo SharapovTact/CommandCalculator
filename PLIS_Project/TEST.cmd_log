@@ -1,2 +1,0 @@
-sch2sym -intstyle ise -family spartan6 -refsym TEST D:/Study/PLIS/CommandCalculator/PLIS_Project/TEST.sch D:/Study/PLIS/CommandCalculator/PLIS_Project/TEST.sym 
-sch2sym -intstyle ise -family spartan6 -w -refsym TEST D:/Study/PLIS/CommandCalculator/PLIS_Project/TEST.sch D:/Study/PLIS/CommandCalculator/PLIS_Project/TEST.sym 

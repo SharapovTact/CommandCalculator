@@ -1,2 +1,0 @@
-vhdtdtfi -lib work const_MODC_V_BackPorch.vhd -prj PLIS_Project -o const_MODC_V_BackPorch.spl -module const_MODC_V_BackPorch -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
-spl2sym -intstyle ise -family spartan6 -w const_MODC_V_BackPorch.spl D:/Study/PLIS/CommandCalculator/PLIS_Project/const_MODC_V_BackPorch.sym 

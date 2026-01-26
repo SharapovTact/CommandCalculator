@@ -1,2 +1,0 @@
-vhdtdtfi -lib work const_MODC_Display.vhd -prj PLIS_Project -o const_MODC_Display.spl -module const_MODC_Display -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
-spl2sym -intstyle ise -family spartan6 const_MODC_Display.spl D:/Study/PLIS/CommandCalculator/PLIS_Project/const_MODC_Display.sym 
