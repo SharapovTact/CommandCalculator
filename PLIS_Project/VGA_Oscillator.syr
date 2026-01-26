@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Reading design: VGA_Oscillator.prj
 
@@ -248,6 +248,10 @@ Going to vhdl side to elaborate module const_COLOR
 Elaborating entity <const_COLOR> (architecture <Behavioral>) from library <work>.
 Back to verilog to continue elaboration
 
+Elaborating module <VCC>.
+
+Elaborating module <BUF>.
+
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
@@ -351,11 +355,12 @@ Unit <const_MODC_V_FrontPorch> synthesized.
 
 Synthesizing Unit <Divider_25MHz>.
     Related source file is "D:\Study\PLIS\CommandCalculator\PLIS_Project\Devider_25MHz.vhd".
-    Found 32-bit register for signal <count>.
-    Found 32-bit adder for signal <count[31]_GND_122_o_add_0_OUT> created at line 16.
+    Found 1-bit register for signal <sig>.
+    Found 32-bit register for signal <counter>.
+    Found 32-bit adder for signal <counter[31]_GND_122_o_add_1_OUT> created at line 21.
     Summary:
 	inferred   1 Adder/Subtractor(s).
-	inferred  32 D-type flip-flop(s).
+	inferred  33 D-type flip-flop(s).
 Unit <Divider_25MHz> synthesized.
 
 Synthesizing Unit <const_COLOR>.
@@ -371,7 +376,8 @@ Macro Statistics
 # Adders/Subtractors                                   : 9
  10-bit adder                                          : 8
  32-bit adder                                          : 1
-# Registers                                            : 1
+# Registers                                            : 2
+ 1-bit register                                        : 1
  32-bit register                                       : 1
 # Latches                                              : 96
  1-bit latch                                           : 96
@@ -468,7 +474,7 @@ WARNING:Xst:1293 - FF/Latch <count_8> has a constant value of 0 in block <XLXI_6
 WARNING:Xst:1293 - FF/Latch <count_9> has a constant value of 0 in block <XLXI_6>. This FF/Latch will be trimmed during the optimization process.
 
 Synthesizing (advanced) Unit <Divider_25MHz>.
-The following registers are absorbed into counter <count>: 1 register on signal <count>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
 Unit <Divider_25MHz> synthesized (advanced).
 
 =========================================================================
@@ -479,6 +485,8 @@ Macro Statistics
  10-bit adder                                          : 8
 # Counters                                             : 1
  32-bit up counter                                     : 1
+# Registers                                            : 1
+ Flip-Flops                                            : 1
 # Comparators                                          : 8
  10-bit comparator equal                               : 8
 # Multiplexers                                         : 112
@@ -510,6 +518,35 @@ WARNING:Xst:2677 - Node <XLXI_1/XLXI_8/trnsprnt_int> of sequential type is uncon
 WARNING:Xst:2677 - Node <XLXI_1/XLXI_2/trnsprnt_int> of sequential type is unconnected in block <VGA_Oscillator>.
 
 Optimizing unit <VGA_Oscillator> ...
+WARNING:Xst:1293 - FF/Latch <XLXI_2/counter_31> has a constant value of 0 in block <VGA_Oscillator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_2/counter_30> has a constant value of 0 in block <VGA_Oscillator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_2/counter_29> has a constant value of 0 in block <VGA_Oscillator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_2/counter_28> has a constant value of 0 in block <VGA_Oscillator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_2/counter_27> has a constant value of 0 in block <VGA_Oscillator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_2/counter_26> has a constant value of 0 in block <VGA_Oscillator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_2/counter_25> has a constant value of 0 in block <VGA_Oscillator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_2/counter_24> has a constant value of 0 in block <VGA_Oscillator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_2/counter_23> has a constant value of 0 in block <VGA_Oscillator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_2/counter_22> has a constant value of 0 in block <VGA_Oscillator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_2/counter_21> has a constant value of 0 in block <VGA_Oscillator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_2/counter_20> has a constant value of 0 in block <VGA_Oscillator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_2/counter_19> has a constant value of 0 in block <VGA_Oscillator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_2/counter_18> has a constant value of 0 in block <VGA_Oscillator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_2/counter_17> has a constant value of 0 in block <VGA_Oscillator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_2/counter_16> has a constant value of 0 in block <VGA_Oscillator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_2/counter_15> has a constant value of 0 in block <VGA_Oscillator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_2/counter_14> has a constant value of 0 in block <VGA_Oscillator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_2/counter_13> has a constant value of 0 in block <VGA_Oscillator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_2/counter_12> has a constant value of 0 in block <VGA_Oscillator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_2/counter_11> has a constant value of 0 in block <VGA_Oscillator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_2/counter_10> has a constant value of 0 in block <VGA_Oscillator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_2/counter_9> has a constant value of 0 in block <VGA_Oscillator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_2/counter_8> has a constant value of 0 in block <VGA_Oscillator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_2/counter_7> has a constant value of 0 in block <VGA_Oscillator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_2/counter_6> has a constant value of 0 in block <VGA_Oscillator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_2/counter_5> has a constant value of 0 in block <VGA_Oscillator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_2/counter_4> has a constant value of 0 in block <VGA_Oscillator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_2/counter_3> has a constant value of 0 in block <VGA_Oscillator>. This FF/Latch will be trimmed during the optimization process.
 
 Mapping all equations...
 Building and optimizing final netlist ...
@@ -521,8 +558,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 32
- Flip-Flops                                            : 32
+# Registers                                            : 4
+ Flip-Flops                                            : 4
 
 =========================================================================
 
@@ -545,24 +582,26 @@ Top Level Output File Name         : VGA_Oscillator.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 108
+# BELS                             : 18
 #      AND2                        : 1
+#      BUF                         : 3
 #      GND                         : 1
 #      INV                         : 1
-#      LUT1                        : 31
-#      LUT2                        : 1
-#      LUT6                        : 7
-#      MUXCY                       : 31
+#      LUT1                        : 2
+#      LUT3                        : 1
+#      LUT4                        : 1
+#      MUXCY                       : 2
 #      OR3                         : 2
 #      VCC                         : 1
-#      XORCY                       : 32
-# FlipFlops/Latches                : 32
-#      FDC                         : 32
+#      XORCY                       : 3
+# FlipFlops/Latches                : 4
+#      FD                          : 1
+#      FDR                         : 3
 # Clock Buffers                    : 1
-#      BUFGP                       : 1
-# IO Buffers                       : 11
+#      BUFG                        : 1
+# IO Buffers                       : 14
 #      IBUF                        : 1
-#      OBUF                        : 10
+#      OBUF                        : 13
 
 Device utilization summary:
 ---------------------------
@@ -571,20 +610,20 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              32  out of  18224     0%  
- Number of Slice LUTs:                   40  out of   9112     0%  
-    Number used as Logic:                40  out of   9112     0%  
+ Number of Slice Registers:               4  out of  18224     0%  
+ Number of Slice LUTs:                    5  out of   9112     0%  
+    Number used as Logic:                 5  out of   9112     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:     41
-   Number with an unused Flip Flop:       9  out of     41    21%  
-   Number with an unused LUT:             1  out of     41     2%  
-   Number of fully used LUT-FF pairs:    31  out of     41    75%  
+ Number of LUT Flip Flop pairs used:      9
+   Number with an unused Flip Flop:       5  out of      9    55%  
+   Number with an unused LUT:             4  out of      9    44%  
+   Number of fully used LUT-FF pairs:     0  out of      9     0%  
    Number of unique control sets:         2
 
 IO Utilization: 
- Number of IOs:                          12
- Number of bonded IOBs:                  12  out of    232     5%  
+ Number of IOs:                          14
+ Number of bonded IOBs:                  14  out of    232     6%  
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
@@ -610,7 +649,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-CLK_100MHz                         | BUFGP                  | 32    |
+CLK_100MHz                         | IBUF+BUFG              | 4     |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -621,10 +660,10 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 4.252ns (Maximum Frequency: 235.167MHz)
+   Minimum period: 2.612ns (Maximum Frequency: 382.922MHz)
    Minimum input arrival time before clock: No path found
-   Maximum output required time after clock: No path found
-   Maximum combinational path delay: No path found
+   Maximum output required time after clock: 3.668ns
+   Maximum combinational path delay: 5.519ns
 
 Timing Details:
 ---------------
@@ -632,26 +671,63 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK_100MHz'
-  Clock period: 4.252ns (frequency: 235.167MHz)
-  Total number of paths / destination ports: 1552 / 64
+  Clock period: 2.612ns (frequency: 382.922MHz)
+  Total number of paths / destination ports: 19 / 7
 -------------------------------------------------------------------------
-Delay:               4.252ns (Levels of Logic = 2)
-  Source:            XLXI_2/count_25 (FF)
-  Destination:       XLXI_2/count_0 (FF)
+Delay:               2.612ns (Levels of Logic = 1)
+  Source:            XLXI_2/counter_2 (FF)
+  Destination:       XLXI_2/counter_0 (FF)
   Source Clock:      CLK_100MHz rising
   Destination Clock: CLK_100MHz rising
 
-  Data Path: XLXI_2/count_25 to XLXI_2/count_0
+  Data Path: XLXI_2/counter_2 to XLXI_2/counter_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              2   0.447   0.981  XLXI_2/count_25 (XLXI_2/count_25)
-     LUT6:I0->O            2   0.203   0.961  XLXI_2/CLK_25MHz<31>5 (XLXI_2/CLK_25MHz<31>4)
-     LUT6:I1->O           17   0.203   1.027  XLXI_2/CLK_25MHz<31>7 (XLXN_9)
-     FDC:CLR                   0.430          XLXI_2/count_0
+     FDR:C->Q              3   0.447   0.879  XLXI_2/counter_2 (XLXI_2/counter_2)
+     LUT3:I0->O            3   0.205   0.650  XLXI_2/GND_122_o_counter[31]_equal_1_o<31>1 (XLXI_2/GND_122_o_counter[31]_equal_1_o)
+     FDR:R                     0.430          XLXI_2/counter_0
     ----------------------------------------
-    Total                      4.252ns (1.283ns logic, 2.969ns route)
-                                       (30.2% logic, 69.8% route)
+    Total                      2.612ns (1.082ns logic, 1.530ns route)
+                                       (41.4% logic, 58.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK_100MHz'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              3.668ns (Levels of Logic = 1)
+  Source:            XLXI_2/sig (FF)
+  Destination:       CLK_LED (PAD)
+  Source Clock:      CLK_100MHz rising
+
+  Data Path: XLXI_2/sig to CLK_LED
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.447   0.650  XLXI_2/sig (XLXI_2/sig)
+     OBUF:I->O                 2.571          CLK_LED_OBUF (CLK_LED)
+    ----------------------------------------
+    Total                      3.668ns (3.018ns logic, 0.650ns route)
+                                       (82.3% logic, 17.7% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               5.519ns (Levels of Logic = 3)
+  Source:            CLK_100MHz (PAD)
+  Destination:       O_LED (PAD)
+
+  Data Path: CLK_100MHz to O_LED
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.579  CLK_100MHz_IBUF (CLK_100MHz_IBUF)
+     BUF:I->O              1   0.568   0.579  XLXI_7 (O_LED_OBUF)
+     OBUF:I->O                 2.571          O_LED_OBUF (O_LED)
+    ----------------------------------------
+    Total                      5.519ns (4.361ns logic, 1.158ns route)
+                                       (79.0% logic, 21.0% route)
 
 =========================================================================
 
@@ -663,20 +739,20 @@ Clock to Setup on destination clock CLK_100MHz
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK_100MHz     |    4.252|         |         |         |
+CLK_100MHz     |    2.612|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
 Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 4.06 secs
+Total CPU time to Xst completion: 4.49 secs
  
 --> 
 
 Total memory usage is 4502276 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  125 (   0 filtered)
+Number of warnings :  154 (   0 filtered)
 Number of infos    :    8 (   0 filtered)
 

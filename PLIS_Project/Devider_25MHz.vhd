@@ -8,20 +8,19 @@ end Divider_25MHz;
 
 architecture Behavioral of Divider_25MHz is
 
+signal sig : std_logic := '0';
 begin
-process(CLK_100MHz)
-variable count : integer := 0;
-begin
-	if (CLK_100MHz'event and CLK_100MHz = '1') then
-		count := count + 1;
-	end if;
-	if (count = 4) then
-		CLK_25MHz <= '1';
-		count := 0;
-	else
-		CLK_25MHz <= '0';
-	end if;
-end process;
-
+	process(CLK_100MHz)
+	variable counter : integer := 0;
+	begin
+		if (CLK_100MHz'event and CLK_100MHz = '1') then
+			if (counter = 4) then 
+				counter := 0;
+				sig <= not(sig);
+			else
+				counter := counter + 1;
+			end if;
+		end if;
+	end process;
+	CLK_25MHz <= sig;
 end Behavioral;
-

@@ -26,6 +26,8 @@ Compiling module AND2
 Compiling module OR3
 Compiling module H_Synch_MUSER_VGA_Oscillator
 Compiling module V_Synch_MUSER_VGA_Oscillator
+Compiling module VCC
+Compiling module BUF
 Compiling module VGA_Oscillator
 Compiling package standard
 Compiling package std_logic_1164
@@ -49,7 +51,7 @@ Compiling architecture behavioral of entity vga_oscillator_vga_oscillator_sc...
 Time Resolution for simulation is 1ps.
 Waiting for 12 sub-compilation(s) to finish...
 Compiled 30 VHDL Units
-Compiled 6 Verilog Units
+Compiled 8 Verilog Units
 Built simulation executable D:/Study/PLIS/CommandCalculator/PLIS_Project/VGA_Oscillator_VGA_Oscillator_sch_tb_isim_beh.exe
-Fuse Memory Usage: 51208 KB
-Fuse CPU Usage: 1280 ms
+Fuse Memory Usage: 51140 KB
+Fuse CPU Usage: 1139 ms

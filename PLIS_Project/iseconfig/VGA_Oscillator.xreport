@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2026-01-26T02:34:50</DateModified>
+  <DateModified>2026-01-26T03:38:25</DateModified>
   <ModuleName>VGA_Oscillator</ModuleName>
-  <SummaryTimeStamp>2026-01-26T02:25:22</SummaryTimeStamp>
+  <SummaryTimeStamp>2026-01-26T03:37:06</SummaryTimeStamp>
   <SavedFilePath>D:/Study/PLIS/CommandCalculator/PLIS_Project/iseconfig/VGA_Oscillator.xreport</SavedFilePath>
   <ImplementationReportsDirectory>D:/Study/PLIS/CommandCalculator/PLIS_Project\</ImplementationReportsDirectory>
   <DateInitialized>2026-01-26T01:40:29</DateInitialized>

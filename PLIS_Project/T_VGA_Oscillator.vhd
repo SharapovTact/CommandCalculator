@@ -1,4 +1,4 @@
--- Vhdl test bench created from schematic D:\Study\PLIS\CommandCalculator\PLIS_Project\VGA_Oscillator.sch - Mon Jan 26 02:40:35 2026
+-- Vhdl test bench created from schematic D:\Study\PLIS\CommandCalculator\PLIS_Project\VGA_Oscillator.sch - Mon Jan 26 03:38:43 2026
 --
 -- Notes: 
 -- 1) This testbench template has been automatically generated using types
@@ -22,30 +22,36 @@ END VGA_Oscillator_VGA_Oscillator_sch_tb;
 ARCHITECTURE behavioral OF VGA_Oscillator_VGA_Oscillator_sch_tb IS 
 
    COMPONENT VGA_Oscillator
-   PORT( Horizontal_Synch	:	OUT	STD_LOGIC; 
-          Vertical_Synch	:	OUT	STD_LOGIC; 
-          ENABLE	:	IN	STD_LOGIC; 
+   PORT( ENABLE	:	OUT	STD_LOGIC; 
           CLK_100MHz	:	IN	STD_LOGIC; 
-          CLR	:	OUT	STD_LOGIC_VECTOR (7 DOWNTO 0));
+          CLR	:	OUT	STD_LOGIC_VECTOR (7 DOWNTO 0); 
+          CLK_LED	:	OUT	STD_LOGIC; 
+          O_LED	:	OUT	STD_LOGIC; 
+          H	:	OUT	STD_LOGIC; 
+          V	:	OUT	STD_LOGIC);
    END COMPONENT;
 
-   SIGNAL Horizontal_Synch	:	STD_LOGIC;
-   SIGNAL Vertical_Synch	:	STD_LOGIC;
    SIGNAL ENABLE	:	STD_LOGIC;
    SIGNAL CLK_100MHz	:	STD_LOGIC;
    SIGNAL CLR	:	STD_LOGIC_VECTOR (7 DOWNTO 0);
+   SIGNAL CLK_LED	:	STD_LOGIC;
+   SIGNAL O_LED	:	STD_LOGIC;
+   SIGNAL H	:	STD_LOGIC;
+   SIGNAL V	:	STD_LOGIC;
 
 BEGIN
 
    UUT: VGA_Oscillator PORT MAP(
-		Horizontal_Synch => Horizontal_Synch, 
-		Vertical_Synch => Vertical_Synch, 
 		ENABLE => ENABLE, 
 		CLK_100MHz => CLK_100MHz, 
-		CLR => CLR
+		CLR => CLR, 
+		CLK_LED => CLK_LED, 
+		O_LED => O_LED, 
+		H => H, 
+		V => V
    );
 
-	test_proc : process
+   test_proc : process
 	begin	
 		ENABLE <= '1';
 		CLK_100MHz <= '1';

@@ -109,9 +109,9 @@
     </file>
     <file xil_pn:name="T_VGA_Oscillator.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="15"/>
-      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="139"/>
-      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="139"/>
-      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="139"/>
+      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="135"/>
+      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="135"/>
+      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="135"/>
     </file>
   </files>
 

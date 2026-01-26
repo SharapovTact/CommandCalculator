@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : VGA_Oscillator.vf
-// /___/   /\     Timestamp : 01/26/2026 02:38:16
+// /___/   /\     Timestamp : 01/26/2026 03:48:15
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -152,24 +152,40 @@ endmodule
 `timescale 1ns / 1ps
 
 module VGA_Oscillator(CLK_100MHz, 
-                      ENABLE, 
+                      CLK_LED, 
                       CLR, 
-                      Horizontal_Synch, 
-                      Vertical_Synch);
+                      ENABLE, 
+                      H, 
+                      O_LED, 
+                      V);
 
     input CLK_100MHz;
-    input ENABLE;
+   output CLK_LED;
    output [7:0] CLR;
-   output Horizontal_Synch;
-   output Vertical_Synch;
+   output ENABLE;
+   output H;
+   output O_LED;
+   output V;
    
-   wire XLXN_9;
+   wire XLXN_20;
+   wire XLXN_21;
+   wire ENABLE_DUMMY;
+   wire CLK_LED_DUMMY;
    
-   V_Synch_MUSER_VGA_Oscillator  XLXI_1 (.CLK_25MHz(XLXN_9), 
-                                        .ENABLE(ENABLE), 
-                                        .Horizontal(Horizontal_Synch), 
-                                        .Vertical(Vertical_Synch));
+   assign CLK_LED = CLK_LED_DUMMY;
+   assign ENABLE = ENABLE_DUMMY;
+   V_Synch_MUSER_VGA_Oscillator  XLXI_1 (.CLK_25MHz(CLK_LED_DUMMY), 
+                                        .ENABLE(ENABLE_DUMMY), 
+                                        .Horizontal(XLXN_20), 
+                                        .Vertical(XLXN_21));
    Divider_25MHz  XLXI_2 (.CLK_100MHz(CLK_100MHz), 
-                         .CLK_25MHz(XLXN_9));
+                         .CLK_25MHz(CLK_LED_DUMMY));
    const_COLOR  XLXI_5 (.COLOR(CLR[7:0]));
+   VCC  XLXI_6 (.P(ENABLE_DUMMY));
+   BUF  XLXI_7 (.I(CLK_100MHz), 
+               .O(O_LED));
+   BUF  XLXI_11 (.I(XLXN_20), 
+                .O(H));
+   BUF  XLXI_12 (.I(XLXN_21), 
+                .O(V));
 endmodule
