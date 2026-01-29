@@ -1,0 +1,5 @@
+[Inputs]
+=Q[9:0]=
+[Outputs]
+Detect
+[BiDir]

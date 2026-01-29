@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : VGA_Oscillator.vf
-// /___/   /\     Timestamp : 01/26/2026 16:12:58
+// /___/   /\     Timestamp : 01/29/2026 10:29:34
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -20,35 +20,50 @@
 //
 `timescale 1ns / 1ps
 
-module VGA_Oscillator(CLK_100MHz, 
-                      CLK1, 
-                      CLK2, 
+module VGA_Oscillator(CLK, 
                       COLOR, 
                       Horizontal, 
                       Vertical);
 
-    input CLK_100MHz;
-   output CLK1;
-   output CLK2;
+    input CLK;
    output [7:0] COLOR;
    output Horizontal;
    output Vertical;
    
-   wire XLXN_15;
-   wire Horizontal_DUMMY;
+   wire XLXN_17;
+   wire XLXN_20;
+   wire XLXN_21;
+   wire [9:0] XLXN_23;
+   wire XLXN_27;
+   wire [9:0] XLXN_30;
+   wire XLXN_31;
+   wire XLXN_33;
+   wire XLXN_35;
    
-   assign Horizontal = Horizontal_DUMMY;
-   Divider_25MHz  XLXI_1 (.CLK_100MHz(CLK_100MHz), 
-                         .CLK_25MHz(XLXN_15));
-   H_Synch  XLXI_2 (.CLK(XLXN_15), 
-                   .Q(), 
-                   .Synch(Horizontal_DUMMY));
-   const_COLOR  XLXI_3 (.COLOR(COLOR[7:0]));
-   V_Synch  XLXI_4 (.CLK(Horizontal_DUMMY), 
-                   .Q(), 
-                   .Synch(Vertical));
-   BUF  XLXI_5 (.I(CLK_100MHz), 
-               .O(CLK1));
-   BUF  XLXI_6 (.I(XLXN_15), 
-               .O(CLK2));
+   Divider_25MHz  XLXI_1 (.CLK_100MHz(CLK), 
+                         .CLK_25MHz(XLXN_17));
+   const_COLOR  XLXI_2 (.COLOR(COLOR[7:0]));
+   H_Counter  XLXI_3 (.CLK(XLXN_17), 
+                     .Q(XLXN_23[9:0]));
+   Zero_Detect  XLXI_9 (.Q(XLXN_23[9:0]), 
+                       .Detect(XLXN_20));
+   H_PW_Detect  XLXI_10 (.Q(XLXN_23[9:0]), 
+                        .Detect(XLXN_21));
+   V_Counter  XLXI_11 (.CE(XLXN_27), 
+                      .CLK(XLXN_17), 
+                      .Q(XLXN_30[9:0]));
+   Zero_Detect  XLXI_12 (.Q(XLXN_30[9:0]), 
+                        .Detect(XLXN_31));
+   Synch  XLXI_13 (.Reset(XLXN_21), 
+                  .Set(XLXN_20), 
+                  .Synch(XLXN_27));
+   V_PW_Detect  XLXI_14 (.Q(XLXN_30[9:0]), 
+                        .Detect(XLXN_33));
+   Synch  XLXI_15 (.Reset(XLXN_33), 
+                  .Set(XLXN_31), 
+                  .Synch(XLXN_35));
+   INV  XLXI_16 (.I(XLXN_27), 
+                .O(Horizontal));
+   INV  XLXI_17 (.I(XLXN_35), 
+                .O(Vertical));
 endmodule

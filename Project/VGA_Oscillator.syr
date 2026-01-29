@@ -3,13 +3,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
+Total REAL time to Xst completion: 1.00 secs
 Total CPU time to Xst completion: 0.09 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
+Total REAL time to Xst completion: 1.00 secs
 Total CPU time to Xst completion: 0.09 secs
  
 --> Reading design: VGA_Oscillator.prj
@@ -107,12 +107,24 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 Analyzing Verilog file "D:\Study\PLIS\CommandCalculator\Project\VGA_Oscillator.vf" into library work
 Parsing module <VGA_Oscillator>.
-Parsing VHDL file "D:\Study\PLIS\CommandCalculator\Project\V_Synch.vhd" into library work
-Parsing entity <V_Synch>.
-Parsing architecture <Behavioral> of entity <v_synch>.
+Parsing VHDL file "D:\Study\PLIS\CommandCalculator\Project\Zero_Detect.vhd" into library work
+Parsing entity <Zero_Detect>.
+Parsing architecture <Behavioral> of entity <zero_detect>.
+Parsing VHDL file "D:\Study\PLIS\CommandCalculator\Project\V_PW_Detect.vhd" into library work
+Parsing entity <V_PW_Detect>.
+Parsing architecture <Behavioral> of entity <v_pw_detect>.
+Parsing VHDL file "D:\Study\PLIS\CommandCalculator\Project\V_Counter.vhd" into library work
+Parsing entity <V_Counter>.
+Parsing architecture <Behavioral> of entity <v_counter>.
 Parsing VHDL file "D:\Study\PLIS\CommandCalculator\Project\H_Synch.vhd" into library work
-Parsing entity <H_Synch>.
-Parsing architecture <Behavioral> of entity <h_synch>.
+Parsing entity <Synch>.
+Parsing architecture <Behavioral> of entity <synch>.
+Parsing VHDL file "D:\Study\PLIS\CommandCalculator\Project\H_Counter.vhd" into library work
+Parsing entity <H_Counter>.
+Parsing architecture <Behavioral> of entity <h_counter>.
+Parsing VHDL file "D:\Study\PLIS\CommandCalculator\Project\H_3.vhd" into library work
+Parsing entity <H_PW_Detect>.
+Parsing architecture <Behavioral> of entity <h_pw_detect>.
 Parsing VHDL file "D:\Study\PLIS\CommandCalculator\Project\Divider_25MHz.vhd" into library work
 Parsing entity <Divider_25MHz>.
 Parsing architecture <Behavioral> of entity <divider_25mhz>.
@@ -129,20 +141,47 @@ Going to vhdl side to elaborate module Divider_25MHz
 
 Elaborating entity <Divider_25MHz> (architecture <Behavioral>) from library <work>.
 Back to verilog to continue elaboration
-Going to vhdl side to elaborate module H_Synch
-
-Elaborating entity <H_Synch> (architecture <Behavioral>) from library <work>.
-Back to verilog to continue elaboration
 Going to vhdl side to elaborate module const_COLOR
 
 Elaborating entity <const_COLOR> (architecture <Behavioral>) from library <work>.
 Back to verilog to continue elaboration
-Going to vhdl side to elaborate module V_Synch
+Going to vhdl side to elaborate module H_Counter
 
-Elaborating entity <V_Synch> (architecture <Behavioral>) from library <work>.
+Elaborating entity <H_Counter> (architecture <Behavioral>) from library <work>.
+Back to verilog to continue elaboration
+Going to vhdl side to elaborate module Zero_Detect
+
+Elaborating entity <Zero_Detect> (architecture <Behavioral>) from library <work>.
+Back to verilog to continue elaboration
+Going to vhdl side to elaborate module H_PW_Detect
+
+Elaborating entity <H_PW_Detect> (architecture <Behavioral>) from library <work>.
+Back to verilog to continue elaboration
+Going to vhdl side to elaborate module V_Counter
+
+Elaborating entity <V_Counter> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:92 - "D:\Study\PLIS\CommandCalculator\Project\V_Counter.vhd" Line 16: ce should be on the sensitivity list of the process
+Back to verilog to continue elaboration
+Going to vhdl side to elaborate module Zero_Detect
+
+Elaborating entity <Zero_Detect> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:758 - "D:\Study\PLIS\CommandCalculator\Project\Zero_Detect.vhd" Line 5: Replacing existing netlist Zero_Detect(Behavioral)
+Back to verilog to continue elaboration
+Going to vhdl side to elaborate module Synch
+
+Elaborating entity <Synch> (architecture <Behavioral>) from library <work>.
+Back to verilog to continue elaboration
+Going to vhdl side to elaborate module V_PW_Detect
+
+Elaborating entity <V_PW_Detect> (architecture <Behavioral>) from library <work>.
+Back to verilog to continue elaboration
+Going to vhdl side to elaborate module Synch
+
+Elaborating entity <Synch> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:758 - "D:\Study\PLIS\CommandCalculator\Project\H_Synch.vhd" Line 4: Replacing existing netlist Synch(Behavioral)
 Back to verilog to continue elaboration
 
-Elaborating module <BUF>.
+Elaborating module <INV>.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -150,8 +189,6 @@ Elaborating module <BUF>.
 
 Synthesizing Unit <VGA_Oscillator>.
     Related source file is "D:\Study\PLIS\CommandCalculator\Project\VGA_Oscillator.vf".
-INFO:Xst:3210 - "D:\Study\PLIS\CommandCalculator\Project\VGA_Oscillator.vf" line 43: Output port <Q> of the instance <XLXI_2> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\Study\PLIS\CommandCalculator\Project\VGA_Oscillator.vf" line 47: Output port <Q> of the instance <XLXI_4> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <VGA_Oscillator> synthesized.
@@ -166,37 +203,54 @@ Synthesizing Unit <Divider_25MHz>.
 	inferred  33 D-type flip-flop(s).
 Unit <Divider_25MHz> synthesized.
 
-Synthesizing Unit <H_Synch>.
-    Related source file is "D:\Study\PLIS\CommandCalculator\Project\H_Synch.vhd".
-    Found 1-bit register for signal <sig>.
-    Found 10-bit register for signal <sigQ>.
-    Found 10-bit adder for signal <sigQ[9]_GND_7_o_add_0_OUT> created at line 20.
-    Found 10-bit comparator greater for signal <sigQ[9]_GND_7_o_LessThan_2_o> created at line 21
-    Found 10-bit comparator greater for signal <sigQ[9]_PWR_7_o_LessThan_3_o> created at line 23
-    Summary:
-	inferred   1 Adder/Subtractor(s).
-	inferred  11 D-type flip-flop(s).
-	inferred   2 Comparator(s).
-Unit <H_Synch> synthesized.
-
 Synthesizing Unit <const_COLOR>.
     Related source file is "D:\Study\PLIS\CommandCalculator\Project\const_COLOR.vhd".
     Summary:
 	no macro.
 Unit <const_COLOR> synthesized.
 
-Synthesizing Unit <V_Synch>.
-    Related source file is "D:\Study\PLIS\CommandCalculator\Project\V_Synch.vhd".
-    Found 1-bit register for signal <sig>.
-    Found 10-bit register for signal <sigQ>.
-    Found 10-bit adder for signal <sigQ[9]_GND_9_o_add_0_OUT> created at line 20.
-    Found 10-bit comparator greater for signal <sigQ[9]_GND_9_o_LessThan_2_o> created at line 21
-    Found 10-bit comparator greater for signal <sigQ[9]_PWR_9_o_LessThan_3_o> created at line 23
+Synthesizing Unit <H_Counter>.
+    Related source file is "D:\Study\PLIS\CommandCalculator\Project\H_Counter.vhd".
+    Found 10-bit register for signal <sig>.
+    Found 10-bit adder for signal <sig[9]_GND_8_o_add_0_OUT> created at line 17.
     Summary:
 	inferred   1 Adder/Subtractor(s).
-	inferred  11 D-type flip-flop(s).
-	inferred   2 Comparator(s).
-Unit <V_Synch> synthesized.
+	inferred  10 D-type flip-flop(s).
+Unit <H_Counter> synthesized.
+
+Synthesizing Unit <Zero_Detect>.
+    Related source file is "D:\Study\PLIS\CommandCalculator\Project\Zero_Detect.vhd".
+    Summary:
+	no macro.
+Unit <Zero_Detect> synthesized.
+
+Synthesizing Unit <H_PW_Detect>.
+    Related source file is "D:\Study\PLIS\CommandCalculator\Project\H_3.vhd".
+    Summary:
+	no macro.
+Unit <H_PW_Detect> synthesized.
+
+Synthesizing Unit <V_Counter>.
+    Related source file is "D:\Study\PLIS\CommandCalculator\Project\V_Counter.vhd".
+    Found 10-bit register for signal <sig>.
+    Found 10-bit adder for signal <sig[9]_GND_11_o_add_0_OUT> created at line 18.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  10 D-type flip-flop(s).
+Unit <V_Counter> synthesized.
+
+Synthesizing Unit <Synch>.
+    Related source file is "D:\Study\PLIS\CommandCalculator\Project\H_Synch.vhd".
+WARNING:Xst:737 - Found 1-bit latch for signal <sig>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   1 Latch(s).
+Unit <Synch> synthesized.
+
+Synthesizing Unit <V_PW_Detect>.
+    Related source file is "D:\Study\PLIS\CommandCalculator\Project\V_PW_Detect.vhd".
+    Summary:
+	no macro.
+Unit <V_PW_Detect> synthesized.
 
 =========================================================================
 HDL Synthesis Report
@@ -205,12 +259,12 @@ Macro Statistics
 # Adders/Subtractors                                   : 3
  10-bit adder                                          : 2
  32-bit adder                                          : 1
-# Registers                                            : 6
- 1-bit register                                        : 3
+# Registers                                            : 4
+ 1-bit register                                        : 1
  10-bit register                                       : 2
  32-bit register                                       : 1
-# Comparators                                          : 4
- 10-bit comparator greater                             : 4
+# Latches                                              : 2
+ 1-bit latch                                           : 2
 
 =========================================================================
 
@@ -223,13 +277,13 @@ Synthesizing (advanced) Unit <Divider_25MHz>.
 The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
 Unit <Divider_25MHz> synthesized (advanced).
 
-Synthesizing (advanced) Unit <H_Synch>.
-The following registers are absorbed into counter <sigQ>: 1 register on signal <sigQ>.
-Unit <H_Synch> synthesized (advanced).
+Synthesizing (advanced) Unit <H_Counter>.
+The following registers are absorbed into counter <sig>: 1 register on signal <sig>.
+Unit <H_Counter> synthesized (advanced).
 
-Synthesizing (advanced) Unit <V_Synch>.
-The following registers are absorbed into counter <sigQ>: 1 register on signal <sigQ>.
-Unit <V_Synch> synthesized (advanced).
+Synthesizing (advanced) Unit <V_Counter>.
+The following registers are absorbed into counter <sig>: 1 register on signal <sig>.
+Unit <V_Counter> synthesized (advanced).
 
 =========================================================================
 Advanced HDL Synthesis Report
@@ -238,16 +292,40 @@ Macro Statistics
 # Counters                                             : 3
  10-bit up counter                                     : 2
  32-bit up counter                                     : 1
-# Registers                                            : 3
- Flip-Flops                                            : 3
-# Comparators                                          : 4
- 10-bit comparator greater                             : 4
+# Registers                                            : 1
+ Flip-Flops                                            : 1
 
 =========================================================================
 
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
+WARNING:Xst:3002 - This design contains one or more registers/latches that are directly
+   incompatible with the Spartan6 architecture. The two primary causes of this is
+   either a register or latch described with both an asynchronous set and
+   asynchronous reset, or a register or latch described with an asynchronous
+   set or reset which however has an initialization value of the opposite 
+   polarity (i.e. asynchronous reset with an initialization value of 1).
+    While this circuit can be built, it creates a sub-optimal implementation
+   in terms of area, power and performance. For a more optimal implementation
+   Xilinx highly recommends one of the following:
+
+          1) Remove either the set or reset from all registers and latches
+             if not needed for required functionality
+          2) Modify the code in order to produce a synchronous set
+             and/or reset (both is preferred)
+          3) Ensure all registers have the same initialization value as the
+             described asynchronous set or reset polarity
+          4) Use the -async_to_sync option to transform the asynchronous
+             set/reset to synchronous operation
+             (timing simulation highly recommended when using this option)
+
+  Please refer to http://www.xilinx.com search string "Spartan6 asynchronous set/reset" for more details.
+
+  List of register instances with asynchronous set and reset:
+    XLXI_13/sig in unit <VGA_Oscillator>
+    XLXI_15/sig in unit <VGA_Oscillator>
+
 
 Optimizing unit <VGA_Oscillator> ...
 
@@ -261,8 +339,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 55
- Flip-Flops                                            : 55
+# Registers                                            : 53
+ Flip-Flops                                            : 53
 
 =========================================================================
 
@@ -285,26 +363,28 @@ Top Level Output File Name         : VGA_Oscillator.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 206
-#      BUF                         : 2
+# BELS                             : 207
 #      GND                         : 1
-#      INV                         : 3
+#      INV                         : 5
 #      LUT1                        : 49
-#      LUT2                        : 34
+#      LUT2                        : 33
+#      LUT3                        : 1
 #      LUT4                        : 1
-#      LUT5                        : 3
+#      LUT5                        : 4
 #      LUT6                        : 11
 #      MUXCY                       : 49
 #      VCC                         : 1
 #      XORCY                       : 52
 # FlipFlops/Latches                : 55
-#      FD                          : 35
-#      FDR                         : 20
-# Clock Buffers                    : 1
+#      FD                          : 33
+#      FDR                         : 10
+#      FDRE                        : 10
+#      LD                          : 2
+# Clock Buffers                    : 2
 #      BUFG                        : 1
-# IO Buffers                       : 13
-#      IBUF                        : 1
-#      OBUF                        : 12
+#      BUFGP                       : 1
+# IO Buffers                       : 10
+#      OBUF                        : 10
 
 Device utilization summary:
 ---------------------------
@@ -314,22 +394,22 @@ Selected Device : 6slx16csg324-3
 
 Slice Logic Utilization: 
  Number of Slice Registers:              55  out of  18224     0%  
- Number of Slice LUTs:                  101  out of   9112     1%  
-    Number used as Logic:               101  out of   9112     1%  
+ Number of Slice LUTs:                  104  out of   9112     1%  
+    Number used as Logic:               104  out of   9112     1%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    101
-   Number with an unused Flip Flop:      46  out of    101    45%  
-   Number with an unused LUT:             0  out of    101     0%  
-   Number of fully used LUT-FF pairs:    55  out of    101    54%  
+ Number of LUT Flip Flop pairs used:    104
+   Number with an unused Flip Flop:      49  out of    104    47%  
+   Number with an unused LUT:             0  out of    104     0%  
+   Number of fully used LUT-FF pairs:    55  out of    104    52%  
    Number of unique control sets:         5
 
 IO Utilization: 
- Number of IOs:                          13
- Number of bonded IOBs:                  13  out of    232     5%  
+ Number of IOs:                          11
+ Number of bonded IOBs:                  11  out of    232     4%  
 
 Specific Feature Utilization:
- Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
 
 ---------------------------
 Partition Resource Summary:
@@ -352,10 +432,14 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-XLXI_1/sig                         | NONE(XLXI_2/sig)       | 11    |
-XLXI_2/sig                         | NONE(XLXI_4/sigQ_1)    | 11    |
-CLK_100MHz                         | IBUF+BUFG              | 33    |
+XLXI_1/sig                         | BUFG                   | 20    |
+CLK                                | BUFGP                  | 33    |
+XLXI_15/sig_G(XLXI_15/sig_G:O)     | NONE(*)(XLXI_15/sig)   | 1     |
+XLXI_13/sig_G(XLXI_13/sig_G:O)     | NONE(*)(XLXI_13/sig)   | 1     |
 -----------------------------------+------------------------+-------+
+(*) These 2 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
@@ -366,10 +450,10 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 4.130ns (Maximum Frequency: 242.113MHz)
+   Minimum period: 4.164ns (Maximum Frequency: 240.136MHz)
    Minimum input arrival time before clock: No path found
-   Maximum output required time after clock: 5.097ns
-   Maximum combinational path delay: 5.519ns
+   Maximum output required time after clock: 5.124ns
+   Maximum combinational path delay: No path found
 
 Timing Details:
 ---------------
@@ -377,162 +461,102 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'XLXI_1/sig'
-  Clock period: 3.753ns (frequency: 266.422MHz)
-  Total number of paths / destination ports: 175 / 22
+  Clock period: 3.773ns (frequency: 265.009MHz)
+  Total number of paths / destination ports: 310 / 40
 -------------------------------------------------------------------------
-Delay:               3.753ns (Levels of Logic = 2)
-  Source:            XLXI_2/sigQ_2 (FF)
-  Destination:       XLXI_2/sigQ_0 (FF)
+Delay:               3.773ns (Levels of Logic = 2)
+  Source:            XLXI_3/sig_0 (FF)
+  Destination:       XLXI_3/sig_0 (FF)
   Source Clock:      XLXI_1/sig rising
   Destination Clock: XLXI_1/sig rising
 
-  Data Path: XLXI_2/sigQ_2 to XLXI_2/sigQ_0
+  Data Path: XLXI_3/sig_0 to XLXI_3/sig_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              2   0.447   0.961  XLXI_2/sigQ_2 (XLXI_2/sigQ_2)
-     LUT5:I0->O            3   0.203   0.651  XLXI_2/sigQ[9]_GND_7_o_LessThan_2_o21 (XLXI_2/sigQ[9]_GND_7_o_LessThan_2_o2)
-     LUT6:I5->O           10   0.205   0.856  XLXI_2/_n00191 (XLXI_2/_n0019)
-     FDR:R                     0.430          XLXI_2/sigQ_0
+     FDR:C->Q              2   0.447   0.981  XLXI_3/sig_0 (XLXI_3/sig_0)
+     LUT6:I0->O            3   0.203   0.651  XLXI_13/GND_16_o_PWR_15_o_MUX_49_o51 (XLXI_13/GND_16_o_PWR_15_o_MUX_49_o_bdd2)
+     LUT5:I4->O           10   0.205   0.856  XLXI_3/sig[9]_PWR_8_o_equal_2_o1 (XLXI_3/sig[9]_PWR_8_o_equal_2_o)
+     FDR:R                     0.430          XLXI_3/sig_0
     ----------------------------------------
-    Total                      3.753ns (1.285ns logic, 2.468ns route)
-                                       (34.2% logic, 65.8% route)
+    Total                      3.773ns (1.285ns logic, 2.488ns route)
+                                       (34.1% logic, 65.9% route)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'XLXI_2/sig'
-  Clock period: 3.746ns (frequency: 266.934MHz)
-  Total number of paths / destination ports: 155 / 20
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 4.164ns (frequency: 240.136MHz)
+  Total number of paths / destination ports: 1586 / 33
 -------------------------------------------------------------------------
-Delay:               3.746ns (Levels of Logic = 2)
-  Source:            XLXI_4/sigQ_6 (FF)
-  Destination:       XLXI_4/sigQ_1 (FF)
-  Source Clock:      XLXI_2/sig rising
-  Destination Clock: XLXI_2/sig rising
-
-  Data Path: XLXI_4/sigQ_6 to XLXI_4/sigQ_1
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDR:C->Q              2   0.447   0.981  XLXI_4/sigQ_6 (XLXI_4/sigQ_6)
-     LUT6:I0->O            3   0.203   0.651  XLXI_4/sigQ[9]_GND_9_o_LessThan_2_o111 (XLXI_4/sigQ[9]_GND_9_o_LessThan_2_o11)
-     LUT4:I3->O            9   0.205   0.829  XLXI_4/_n00191 (XLXI_4/_n0019)
-     FDR:R                     0.430          XLXI_4/sigQ_1
-    ----------------------------------------
-    Total                      3.746ns (1.285ns logic, 2.461ns route)
-                                       (34.3% logic, 65.7% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'CLK_100MHz'
-  Clock period: 4.130ns (frequency: 242.113MHz)
-  Total number of paths / destination ports: 1585 / 33
--------------------------------------------------------------------------
-Delay:               4.130ns (Levels of Logic = 3)
+Delay:               4.164ns (Levels of Logic = 3)
   Source:            XLXI_1/counter_25 (FF)
-  Destination:       XLXI_1/sig (FF)
-  Source Clock:      CLK_100MHz rising
-  Destination Clock: CLK_100MHz rising
+  Destination:       XLXI_1/counter_0 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
 
-  Data Path: XLXI_1/counter_25 to XLXI_1/sig
+  Data Path: XLXI_1/counter_25 to XLXI_1/counter_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FD:C->Q               2   0.447   0.981  XLXI_1/counter_25 (XLXI_1/counter_25)
-     LUT6:I0->O            2   0.203   0.961  XLXI_1/GND_4_o_counter[31]_equal_1_o<31>5 (XLXI_1/GND_4_o_counter[31]_equal_1_o<31>4)
+     LUT6:I0->O            3   0.203   0.995  XLXI_1/GND_4_o_counter[31]_equal_1_o<31>5 (XLXI_1/GND_4_o_counter[31]_equal_1_o<31>4)
      LUT6:I1->O           17   0.203   1.028  XLXI_1/GND_4_o_counter[31]_equal_1_o<31>7 (XLXI_1/GND_4_o_counter[31]_equal_1_o)
      LUT2:I1->O            1   0.205   0.000  XLXI_1/counter_0_rstpot (XLXI_1/counter_0_rstpot)
      FD:D                      0.102          XLXI_1/counter_0
     ----------------------------------------
-    Total                      4.130ns (1.160ns logic, 2.970ns route)
-                                       (28.1% logic, 71.9% route)
+    Total                      4.164ns (1.160ns logic, 3.004ns route)
+                                       (27.9% logic, 72.1% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK_100MHz'
+Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_13/sig_G'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Offset:              5.097ns (Levels of Logic = 2)
-  Source:            XLXI_1/sig (FF)
-  Destination:       CLK2 (PAD)
-  Source Clock:      CLK_100MHz rising
-
-  Data Path: XLXI_1/sig to CLK2
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FD:C->Q              13   0.447   0.932  XLXI_1/sig (XLXI_1/sig)
-     BUF:I->O              1   0.568   0.579  XLXI_6 (CLK2_OBUF)
-     OBUF:I->O                 2.571          CLK2_OBUF (CLK2)
-    ----------------------------------------
-    Total                      5.097ns (3.586ns logic, 1.511ns route)
-                                       (70.4% logic, 29.6% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_1/sig'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              3.926ns (Levels of Logic = 1)
-  Source:            XLXI_2/sig (FF)
+Offset:              5.124ns (Levels of Logic = 2)
+  Source:            XLXI_13/sig (LATCH)
   Destination:       Horizontal (PAD)
-  Source Clock:      XLXI_1/sig rising
+  Source Clock:      XLXI_13/sig_G falling
 
-  Data Path: XLXI_2/sig to Horizontal
+  Data Path: XLXI_13/sig to Horizontal
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q             12   0.447   0.908  XLXI_2/sig (XLXI_2/sig)
+     LD:G->Q              12   0.498   0.908  XLXI_13/sig (XLXI_13/sig)
+     INV:I->O              1   0.568   0.579  XLXI_16 (Horizontal_OBUF)
      OBUF:I->O                 2.571          Horizontal_OBUF (Horizontal)
     ----------------------------------------
-    Total                      3.926ns (3.018ns logic, 0.908ns route)
-                                       (76.9% logic, 23.1% route)
+    Total                      5.124ns (3.637ns logic, 1.487ns route)
+                                       (71.0% logic, 29.0% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_2/sig'
+Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_15/sig_G'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Offset:              3.597ns (Levels of Logic = 1)
-  Source:            XLXI_4/sig (FF)
+Offset:              4.795ns (Levels of Logic = 2)
+  Source:            XLXI_15/sig (LATCH)
   Destination:       Vertical (PAD)
-  Source Clock:      XLXI_2/sig rising
+  Source Clock:      XLXI_15/sig_G falling
 
-  Data Path: XLXI_4/sig to Vertical
+  Data Path: XLXI_15/sig to Vertical
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               1   0.447   0.579  XLXI_4/sig (XLXI_4/sig)
+     LD:G->Q               1   0.498   0.579  XLXI_15/sig (XLXI_15/sig)
+     INV:I->O              1   0.568   0.579  XLXI_17 (Vertical_OBUF)
      OBUF:I->O                 2.571          Vertical_OBUF (Vertical)
     ----------------------------------------
-    Total                      3.597ns (3.018ns logic, 0.579ns route)
-                                       (83.9% logic, 16.1% route)
-
-=========================================================================
-Timing constraint: Default path analysis
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Delay:               5.519ns (Levels of Logic = 3)
-  Source:            CLK_100MHz (PAD)
-  Destination:       CLK1 (PAD)
-
-  Data Path: CLK_100MHz to CLK1
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             1   1.222   0.579  CLK_100MHz_IBUF (CLK_100MHz_IBUF)
-     BUF:I->O              1   0.568   0.579  XLXI_5 (CLK1_OBUF)
-     OBUF:I->O                 2.571          CLK1_OBUF (CLK1)
-    ----------------------------------------
-    Total                      5.519ns (4.361ns logic, 1.158ns route)
-                                       (79.0% logic, 21.0% route)
+    Total                      4.795ns (3.637ns logic, 1.158ns route)
+                                       (75.9% logic, 24.1% route)
 
 =========================================================================
 
 Cross Clock Domains Report:
 --------------------------
 
-Clock to Setup on destination clock CLK_100MHz
+Clock to Setup on destination clock CLK
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK_100MHz     |    4.130|         |         |         |
+CLK            |    4.164|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock XLXI_1/sig
@@ -540,28 +564,37 @@ Clock to Setup on destination clock XLXI_1/sig
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-XLXI_1/sig     |    3.753|         |         |         |
+XLXI_1/sig     |    3.773|         |         |         |
+XLXI_13/sig_G  |         |    3.000|         |         |
 ---------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock XLXI_2/sig
+Clock to Setup on destination clock XLXI_13/sig_G
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-XLXI_2/sig     |    3.746|         |         |         |
+XLXI_1/sig     |         |         |    2.525|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock XLXI_15/sig_G
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+XLXI_1/sig     |         |         |    2.525|         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 3.78 secs
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.93 secs
  
 --> 
 
-Total memory usage is 4500996 kilobytes
+Total memory usage is 4501252 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    0 (   0 filtered)
-Number of infos    :    3 (   0 filtered)
+Number of warnings :    5 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
 

@@ -27,11 +27,27 @@
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Divider_25MHz.stx"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="Divider_25MHz.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="Divider_25MHz.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="H_Counter.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="H_Counter.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="H_Counter.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="H_Counter.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="H_Counter.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="H_PW_Detect.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="H_PW_Detect.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="H_PW_Detect.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="H_PW_Detect.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="H_PW_Detect.xst"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="H_Synch.prj"/>
     <file xil_pn:fileType="FILE_SPL" xil_pn:name="H_Synch.spl"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="H_Synch.stx"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="H_Synch.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="H_Synch.xst"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="Synch.spl"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="Synch.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="T_H_Counter_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="T_H_Counter_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="T_H_Counter_isim_beh.wdb"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="T_H_Synch_isim_beh.exe"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="VGA_Oscillator.bld"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="VGA_Oscillator.cmd_log"/>
     <file xil_pn:fileType="FILE_JHD" xil_pn:name="VGA_Oscillator.jhd"/>
@@ -58,8 +74,8 @@
     </file>
     <file xil_pn:fileType="FILE_XPI" xil_pn:name="VGA_Oscillator.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="VGA_Oscillator.xst"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="VGA_Oscillator_VGA_Oscillator_sch_tb_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="VGA_Oscillator_VGA_Oscillator_sch_tb_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="VGA_Oscillator_VGA_Oscillator_sch_tb_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="VGA_Oscillator_guide.ncd" xil_pn:origination="imported"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="VGA_Oscillator_map.map" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="VGA_Oscillator_map.mrp" xil_pn:subbranch="Map"/>
@@ -74,8 +90,19 @@
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="VGA_Oscillator_summary.xml"/>
     <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="VGA_Oscillator_usage.xml"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="VGA_Oscillator_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="V_Counter.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="V_Counter.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="V_Counter.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="V_Counter.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="V_Counter.xst"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="V_PW_Detect.spl"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="V_PW_Detect.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_SPL" xil_pn:name="V_Synch.spl"/>
-    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="V_Synch.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Zero_Detect.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="Zero_Detect.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Zero_Detect.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="Zero_Detect.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="Zero_Detect.xst"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
@@ -85,7 +112,10 @@
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
     <file xil_pn:fileType="FILE_SPL" xil_pn:name="const_COLOR.spl"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="const_COLOR.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="vga_oscillator.bgn" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="vga_oscillator.bit" xil_pn:subbranch="FPGAConfiguration"/>
@@ -102,20 +132,29 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1769430762" xil_pn:in_ck="7260534179847260835" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1769430762">
+    <transform xil_pn:end_ts="1769670159" xil_pn:in_ck="-3218383025799040421" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1769670159">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Divider_25MHz.vhd"/>
+      <outfile xil_pn:name="H_3.vhd"/>
+      <outfile xil_pn:name="H_Counter.vhd"/>
       <outfile xil_pn:name="H_Synch.vhd"/>
+      <outfile xil_pn:name="T_H_Counter.vhd"/>
+      <outfile xil_pn:name="T_H_Synch.vhd"/>
       <outfile xil_pn:name="T_VGA_Oscillator.vhd"/>
-      <outfile xil_pn:name="V_Synch.vhd"/>
+      <outfile xil_pn:name="Zero_Detect.vhd"/>
       <outfile xil_pn:name="const_COLOR.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1769427101" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-8723869510669626743" xil_pn:start_ts="1769427101">
+    <transform xil_pn:end_ts="1769670159" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="2739771594575225171" xil_pn:start_ts="1769670159">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1769432741" xil_pn:in_ck="8757995482298764805" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="3146826399040987335" xil_pn:start_ts="1769432740">
+    <transform xil_pn:end_ts="1769670161" xil_pn:in_ck="8757995482298764805" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="1941718530841953169" xil_pn:start_ts="1769670159">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
@@ -128,7 +167,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1769432741" xil_pn:in_ck="5097993673880584006" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1769432741">
+    <transform xil_pn:end_ts="1769670161" xil_pn:in_ck="-5753840496021565506" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1769670161">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
@@ -137,32 +176,46 @@
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Divider_25MHz.vhd"/>
+      <outfile xil_pn:name="H_3.vhd"/>
+      <outfile xil_pn:name="H_Counter.vhd"/>
       <outfile xil_pn:name="H_Synch.vhd"/>
+      <outfile xil_pn:name="T_H_Counter.vhd"/>
+      <outfile xil_pn:name="T_H_Synch.vhd"/>
       <outfile xil_pn:name="T_VGA_Oscillator.vhd"/>
       <outfile xil_pn:name="VGA_Oscillator.vf"/>
-      <outfile xil_pn:name="V_Synch.vhd"/>
+      <outfile xil_pn:name="Zero_Detect.vhd"/>
       <outfile xil_pn:name="const_COLOR.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1769432743" xil_pn:in_ck="5097993673880584006" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-6081253572925724350" xil_pn:start_ts="1769432741">
-      <status xil_pn:value="FailedRun"/>
+    <transform xil_pn:end_ts="1769670164" xil_pn:in_ck="-5753840496021565506" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="6948719983105552867" xil_pn:start_ts="1769670161">
+      <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="T_H_Counter_beh.prj"/>
+      <outfile xil_pn:name="T_H_Counter_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1769430768" xil_pn:in_ck="652059378948880754" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="4273792209455247109" xil_pn:start_ts="1769430768">
-      <status xil_pn:value="AbortedRun"/>
+    <transform xil_pn:end_ts="1769670164" xil_pn:in_ck="-6702008202618554711" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-608267977465835738" xil_pn:start_ts="1769670164">
+      <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForced"/>
-      <outfile xil_pn:name="VGA_Oscillator_VGA_Oscillator_sch_tb_isim_beh.wdb"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="T_H_Counter_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
     </transform>
     <transform xil_pn:end_ts="1769431866" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1769431866">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1769433179" xil_pn:in_ck="8757995482298764805" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="8582283375079487719" xil_pn:start_ts="1769433177">
+    <transform xil_pn:end_ts="1769671776" xil_pn:in_ck="8757995482298764805" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="8582283375079487719" xil_pn:start_ts="1769671774">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="VGA_Oscillator.vf"/>
@@ -187,8 +240,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1769433185" xil_pn:in_ck="-9121772447808718998" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="525439577762756997" xil_pn:start_ts="1769433179">
+    <transform xil_pn:end_ts="1769671783" xil_pn:in_ck="-2090226515498696142" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="525439577762756997" xil_pn:start_ts="1769671776">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
@@ -200,16 +254,17 @@
       <outfile xil_pn:name="VGA_Oscillator.stx"/>
       <outfile xil_pn:name="VGA_Oscillator.syr"/>
       <outfile xil_pn:name="VGA_Oscillator.xst"/>
+      <outfile xil_pn:name="VGA_Oscillator_VGA_Oscillator_sch_tb_beh.prj"/>
       <outfile xil_pn:name="VGA_Oscillator_xst.xrpt"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1769433257" xil_pn:in_ck="3270504803165922" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="4530861799204445371" xil_pn:start_ts="1769433257">
+    <transform xil_pn:end_ts="1769671783" xil_pn:in_ck="3270504803165922" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="4530861799204445371" xil_pn:start_ts="1769671783">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1769433261" xil_pn:in_ck="-3902427281687583583" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-3752957472041728418" xil_pn:start_ts="1769433257">
+    <transform xil_pn:end_ts="1769671788" xil_pn:in_ck="-3902427281687583583" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-3752957472041728418" xil_pn:start_ts="1769671783">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="VGA_Oscillator.bld"/>
@@ -218,11 +273,9 @@
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1769433266" xil_pn:in_ck="-3902427281687583582" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1463976855095865663" xil_pn:start_ts="1769433261">
+    <transform xil_pn:end_ts="1769671797" xil_pn:in_ck="-3902427281687583582" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1463976855095865663" xil_pn:start_ts="1769671788">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="VGA_Oscillator.pcf"/>
       <outfile xil_pn:name="VGA_Oscillator_map.map"/>
       <outfile xil_pn:name="VGA_Oscillator_map.mrp"/>
@@ -233,7 +286,7 @@
       <outfile xil_pn:name="VGA_Oscillator_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1769433275" xil_pn:in_ck="4029120339422360763" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-2723277317048801686" xil_pn:start_ts="1769433266">
+    <transform xil_pn:end_ts="1769671807" xil_pn:in_ck="4029120339422360763" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-2723277317048801686" xil_pn:start_ts="1769671797">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="VGA_Oscillator.ncd"/>
@@ -247,8 +300,9 @@
       <outfile xil_pn:name="VGA_Oscillator_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1769433281" xil_pn:in_ck="8757995482298759356" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1769433275">
+    <transform xil_pn:end_ts="1769671814" xil_pn:in_ck="8757995482298759356" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1769671807">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="VGA_Oscillator.ut"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
@@ -259,7 +313,7 @@
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1769433275" xil_pn:in_ck="-3902427281687583714" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1769433271">
+    <transform xil_pn:end_ts="1769671807" xil_pn:in_ck="-3902427281687583714" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1769671803">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="VGA_Oscillator.twr"/>

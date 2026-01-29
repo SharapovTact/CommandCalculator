@@ -1,0 +1,7 @@
+vhdl work "V_Synch.vhd"
+vhdl work "H_Synch.vhd"
+vhdl work "Divider_25MHz.vhd"
+vhdl work "const_COLOR.vhd"
+verilog work "VGA_Oscillator.vf"
+vhdl work "T_VGA_Oscillator.vhd"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

@@ -1,6 +1,6 @@
 [Inputs]
-CLK
+Set
+Reset
 [Outputs]
 Synch
-=Q[9:0]=
 [BiDir]

@@ -1,0 +1,6 @@
+[Inputs]
+CE
+CLK
+[Outputs]
+=Q[9:0]=
+[BiDir]

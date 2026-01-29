@@ -32,31 +32,16 @@ Data Sheet report:
 -----------------
 All values displayed in nanoseconds (ns)
 
-Clock CLK_100MHz to Pad
-------------+-----------------+------------+-----------------+------------+--------------------+--------+
-            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                    | Clock  |
-Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)   | Phase  |
-------------+-----------------+------------+-----------------+------------+--------------------+--------+
-CLK2        |         9.878(R)|      SLOW  |         5.601(R)|      FAST  |CLK_100MHz_IBUF_BUFG|   0.000|
-------------+-----------------+------------+-----------------+------------+--------------------+--------+
-
-Clock to Setup on destination clock CLK_100MHz
+Clock to Setup on destination clock CLK
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK_100MHz     |    3.626|         |         |         |
+CLK            |    3.642|         |         |         |
 ---------------+---------+---------+---------+---------+
 
-Pad to Pad
----------------+---------------+---------+
-Source Pad     |Destination Pad|  Delay  |
----------------+---------------+---------+
-CLK_100MHz     |CLK1           |    6.500|
----------------+---------------+---------+
 
-
-Analysis completed Mon Jan 26 16:14:33 2026 
+Analysis completed Thu Jan 29 10:30:06 2026 
 --------------------------------------------------------------------------------
 
 Trace Settings:

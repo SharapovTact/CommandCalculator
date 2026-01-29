@@ -1,0 +1,2 @@
+vhdtdtfi -lib work V_PW_Detect.vhd -prj Project -o V_PW_Detect.spl -module V_PW_Detect -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 -w V_PW_Detect.spl D:/Study/PLIS/CommandCalculator/Project/V_PW_Detect.sym 

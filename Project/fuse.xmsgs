@@ -5,17 +5,5 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="error" file="HDLCompiler" num="1156" delta="unknown" >"D:/Study/PLIS/CommandCalculator/Project/T_VGA_Oscillator.vhd" Line 26: Formal port &lt;<arg fmt="%s" index="1">Q1</arg>&gt; does not exist in entity &lt;<arg fmt="%s" index="2">\VGA_Oscillator\</arg>&gt;.  Please compare the definition of block &lt;<arg fmt="%s" index="3">\VGA_Oscillator\</arg>&gt; to its component declaration and its instantion to detect the mismatch.
-</msg>
-
-<msg type="error" file="HDLCompiler" num="1156" delta="unknown" >"D:/Study/PLIS/CommandCalculator/Project/T_VGA_Oscillator.vhd" Line 29: Formal port &lt;<arg fmt="%s" index="1">DivCLK</arg>&gt; does not exist in entity &lt;<arg fmt="%s" index="2">\VGA_Oscillator\</arg>&gt;.  Please compare the definition of block &lt;<arg fmt="%s" index="3">\VGA_Oscillator\</arg>&gt; to its component declaration and its instantion to detect the mismatch.
-</msg>
-
-<msg type="error" file="HDLCompiler" num="1156" delta="unknown" >"D:/Study/PLIS/CommandCalculator/Project/T_VGA_Oscillator.vhd" Line 31: Formal port &lt;<arg fmt="%s" index="1">Q2</arg>&gt; does not exist in entity &lt;<arg fmt="%s" index="2">\VGA_Oscillator\</arg>&gt;.  Please compare the definition of block &lt;<arg fmt="%s" index="3">\VGA_Oscillator\</arg>&gt; to its component declaration and its instantion to detect the mismatch.
-</msg>
-
-<msg type="error" file="Simulator" num="777" delta="unknown" >Static elaboration of top level VHDL design unit <arg fmt="%s" index="1">vga_oscillator_vga_oscillator_sch_tb</arg> in library <arg fmt="%s" index="2">work</arg> failed
-</msg>
-
 </messages>
 

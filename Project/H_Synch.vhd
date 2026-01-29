@@ -1,34 +1,23 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
-entity H_Synch is
-    Port ( CLK : in  STD_LOGIC;
-           Synch : out  STD_LOGIC;
-           Q : out  STD_LOGIC_VECTOR (9 downto 0));
-end H_Synch;
+entity Synch is
+    Port ( Set : in  STD_LOGIC;
+           Reset : in  STD_LOGIC;
+           Synch : out  STD_LOGIC);
+end Synch;
 
-architecture Behavioral of H_Synch is
-signal sig : std_logic := '0';
-signal sigQ : std_logic_vector (9 downto 0) := "0000000000";
-constant pulseWidth : std_logic_vector (9 downto 0) := "0001011111";
-constant active : std_logic_vector (9 downto 0) := "1100011111";
+architecture Behavioral of Synch is
+	Signal sig : std_logic := '0';
 begin
-	process(CLK)
+	process(Set, Reset)
 	begin
-		if (CLK'event and CLK = '1') then 
-			sigQ <= sigQ + '1';
-			if (sigQ < pulseWidth) then
-				sig <= '0';
-			elsif (sigQ < active) then
-				sig <= '1';
-			else
-				sig <= '0';
-				sigQ <= "0000000000";
-			end if;
+		if (Set = '1' and Reset = '0') then
+			sig <= '1';
+		elsif (Set = '0' and Reset = '1') then
+			sig <= '0';
 		end if;
 	end process;
 	Synch <= sig;
-	Q <= sigQ;
 end Behavioral;
 

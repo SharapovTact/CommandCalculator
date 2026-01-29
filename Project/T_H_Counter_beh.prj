@@ -1,0 +1,2 @@
+vhdl work "H_Counter.vhd"
+vhdl work "T_H_Counter.vhd"
